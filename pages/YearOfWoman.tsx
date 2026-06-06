@@ -19,9 +19,6 @@ const YearOfWoman: React.FC = () => {
               </div>
             </div>
             <h1 className="text-3xl md:text-5xl font-bold mb-4">2026 - Год белорусской женщины</h1>
-            <p className="text-rose-100 text-lg md:text-xl max-w-2xl">
-              Информация, посвященная тематике 2026 года в Республике Беларусь.
-            </p>
           </div>
           
           <div className="p-8 md:p-12">
@@ -30,17 +27,22 @@ const YearOfWoman: React.FC = () => {
                 Президент Беларуси Александр Лукашенко подписал Указ № 1, которым 2026 год объявлен Годом белорусской женщины.
               </p>
 
-              <div className="bg-rose-50 border-l-4 border-rose-500 p-6 rounded-r-xl mb-8">
+              <a 
+                href="https://president.gov.by/ru/documents/ukaz-no-1-ot-1-anvara-2026-g"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-rose-50 hover:bg-rose-100 transition-colors border-l-4 border-rose-500 p-6 rounded-r-xl mb-8 no-underline group cursor-pointer"
+              >
                 <div className="flex items-start gap-3">
                   <FileText className="w-6 h-6 text-rose-600 flex-shrink-0 mt-1" />
                   <div>
-                    <h3 className="text-rose-800 font-bold text-lg mb-1">
+                    <h3 className="text-rose-800 font-bold text-lg mb-1 group-hover:text-rose-900 transition-colors">
                       Об объявлении 2026 года Годом белорусской женщины
                     </h3>
-                    <p className="text-rose-600 font-medium">Указ № 1 от 1 января 2026 г.</p>
+                    <p className="text-rose-600 font-medium m-0">Указ № 1 от 1 января 2026 г.</p>
                   </div>
                 </div>
-              </div>
+              </a>
 
               <div className="space-y-6 text-slate-600 leading-relaxed">
                 <p>
