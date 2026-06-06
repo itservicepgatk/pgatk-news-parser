@@ -21,7 +21,8 @@ export const MAIN_MENU: MenuItem[] = [
       { label: "Организационная структура", href: "/kolledg/struktura-kolledga" },
       { label: "Положение о перс. данных", href: "/images/1Novosti/2025/11Noybr/ObrabotkaPersonalnihDannih.pdf" },
       { label: "Политика конфиденциальности", href: "https://pgatkk.by/images/1Novosti/2024/Dekabr/politika_konfidencialnosti.pdf" },
-      { label: "Политика обработки куки", href: "https://pgatkk.by/images/1Novosti/2024/Dekabr/poloshenie_cookie.pdf" }
+      { label: "Политика обработки куки", href: "https://pgatkk.by/images/1Novosti/2024/Dekabr/poloshenie_cookie.pdf" },
+      { label: "Политика ИБ", href: "https://pgatkk.by/images/1Novosti/2024/Dekabr/politika_ib.pdf" }
     ]
   },
   {
@@ -86,10 +87,6 @@ export const MAIN_MENU: MenuItem[] = [
       { label: "Вышестоящие организации", href: "/odno-okno/vyshestoyashchie" },
       { label: "Посещение объекта инвалидом", href: "/odno-okno/invalidy" }
     ]
-  },
-  {
-    label: "Политика ИБ",
-    href: "https://pgatkk.by/images/1Novosti/2024/Dekabr/politika_ib.pdf"
   }
 ];
 
