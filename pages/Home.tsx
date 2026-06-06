@@ -56,38 +56,21 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Main News Item */}
             {mainNews && (
-              mainNews.link.startsWith('http') ? (
-                <a href={mainNews.link} target="_blank" rel="noopener noreferrer" className="lg:col-span-2 group cursor-pointer block">
-                  <MainNewsCard news={mainNews} getImageUrl={getImageUrl} />
-                </a>
-              ) : (
-                <Link to={mainNews.link} className="lg:col-span-2 group cursor-pointer block">
-                  <MainNewsCard news={mainNews} getImageUrl={getImageUrl} />
-                </Link>
-              )
+              <Link to={`/news/${mainNews.id}`} className="lg:col-span-2 group cursor-pointer block">
+                <MainNewsCard news={mainNews} getImageUrl={getImageUrl} />
+              </Link>
             )}
 
             {/* Side News List */}
             <div className="space-y-6">
               {sideNews.map((news) => (
-                news.link.startsWith('http') ? (
-                  <a 
-                    key={news.id} 
-                    href={news.link}
-                    target="_blank" rel="noopener noreferrer"
-                    className="flex gap-4 group cursor-pointer bg-white p-4 rounded-xl shadow-sm border border-slate-100 hover:border-accent-200 transition-colors"
-                  >
-                    <SideNewsCard news={news} getImageUrl={getImageUrl} />
-                  </a>
-                ) : (
-                  <Link 
-                    key={news.id} 
-                    to={news.link}
-                    className="flex gap-4 group cursor-pointer bg-white p-4 rounded-xl shadow-sm border border-slate-100 hover:border-accent-200 transition-colors"
-                  >
-                    <SideNewsCard news={news} getImageUrl={getImageUrl} />
-                  </Link>
-                )
+                <Link 
+                  key={news.id} 
+                  to={`/news/${news.id}`}
+                  className="flex gap-4 group cursor-pointer bg-white p-4 rounded-xl shadow-sm border border-slate-100 hover:border-accent-200 transition-colors"
+                >
+                  <SideNewsCard news={news} getImageUrl={getImageUrl} />
+                </Link>
               ))}
             </div>
           </div>
@@ -190,7 +173,6 @@ const MainNewsCard = ({ news, getImageUrl }: { news: any, getImageUrl: (url?: st
           <Calendar className="w-4 h-4 mr-2" />
           {news.date}
         </div>
-        {news.link.startsWith('http') && <ExternalLink className="w-4 h-4 text-accent-500" />}
       </div>
     </div>
   </div>
@@ -213,7 +195,6 @@ const SideNewsCard = ({ news, getImageUrl }: { news: any, getImageUrl: (url?: st
           ))}
           <span>{news.date}</span>
         </div>
-        {news.link.startsWith('http') && <ExternalLink className="w-3 h-3 text-slate-300" />}
       </div>
       <h4 className="font-bold text-slate-800 leading-snug group-hover:text-primary-800 transition-colors line-clamp-2">
         {news.title}

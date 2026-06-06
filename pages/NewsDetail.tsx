@@ -15,13 +15,53 @@ const NewsDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
 
-  // Ищем новость
-  const newsItem = MOCK_NEWS.find(item => item.id === id);
+  const [newsItem, setNewsItem] = React.useState<any>(null);
+  const [loading, setLoading] = React.useState(true);
 
   // Скролл наверх при открытии
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
+
+  useEffect(() => {
+    if (!id) return;
+    
+    // Ищем в моковых новостях
+    const localItem = MOCK_NEWS.find(item => item.id === id);
+    if (localItem) {
+      setNewsItem(localItem);
+      setLoading(false);
+      return;
+    }
+
+    // Если нет, ищем в Telegram новостях
+    import('../utils/telegram').then(({ fetchTelegramPosts }) => {
+      fetchTelegramPosts().then(posts => {
+        const found = posts.find(p => p.id === id);
+        if (found) {
+          setNewsItem({
+            id: found.id,
+            title: found.title,
+            date: found.date,
+            category: found.category,
+            imageUrl: found.imageUrl || `${import.meta.env.BASE_URL}images/logo/logo_pgatkk.png`,
+            summary: found.summary,
+            content: `<p>${found.summary.replace(/\n/g, '<br/>')}</p>`,
+            link: found.link
+          });
+        }
+        setLoading(false);
+      });
+    });
+  }, [id]);
+
+  if (loading) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50">
+        <div className="text-accent-500 font-bold">Загрузка...</div>
+      </div>
+    );
+  }
 
   if (!newsItem) {
     return (
@@ -70,9 +110,13 @@ const NewsDetail: React.FC = () => {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
             <div className="absolute bottom-0 left-0 p-6 md:p-10 w-full">
-              <span className="bg-accent-500 text-primary-900 text-xs font-bold px-3 py-1 rounded mb-4 inline-block">
-                {newsItem.category}
-              </span>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {(Array.isArray(newsItem.category) ? newsItem.category : [newsItem.category || 'Telegram']).map((cat: string, idx: number) => (
+                  <span key={idx} className="bg-accent-500 text-primary-900 text-xs font-bold px-3 py-1 rounded inline-block">
+                    {cat}
+                  </span>
+                ))}
+              </div>
               <h1 className="text-2xl md:text-4xl font-display font-bold text-white leading-tight shadow-black drop-shadow-lg">
                 {newsItem.title}
               </h1>
@@ -115,7 +159,7 @@ const NewsDetail: React.FC = () => {
           </div>
 
           {/* Footer Actions */}
-          <div className="bg-slate-50 p-6 md:p-10 border-t border-slate-100 flex justify-between items-center">
+          <div className="bg-slate-50 p-6 md:p-10 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-6">
             <Link 
               to="/news"
               className="flex items-center gap-2 text-slate-600 font-bold hover:text-accent-600 transition-colors group"
@@ -125,6 +169,17 @@ const NewsDetail: React.FC = () => {
               </div>
               Назад к новостям
             </Link>
+
+            {newsItem.link && newsItem.link.includes('t.me') && (
+              <a 
+                href={newsItem.link} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-6 py-3 bg-[#0088cc] text-white rounded-xl font-bold shadow-md shadow-[#0088cc]/20 hover:shadow-lg hover:-translate-y-0.5 transition-all text-sm text-center md:text-left"
+              >
+                Больше вы сможете узнать в нашем ТГ канале!
+              </a>
+            )}
           </div>
 
         </div>

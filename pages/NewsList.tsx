@@ -153,19 +153,10 @@ const NewsList: React.FC = () => {
 
               const cardClasses = "group flex flex-col bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full";
 
-              return news.link.startsWith('http') ? (
-                <a 
-                  key={news.id} 
-                  href={news.link}
-                  target="_blank" rel="noopener noreferrer"
-                  className={cardClasses}
-                >
-                  {CardContent}
-                </a>
-              ) : (
+              return (
                 <Link 
                   key={news.id} 
-                  to={news.link}
+                  to={`/news/${news.id}`}
                   className={cardClasses}
                 >
                   {CardContent}
