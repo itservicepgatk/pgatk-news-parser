@@ -15,7 +15,8 @@ const NEWS_CATEGORIES = [
   'Жизнь колледжа',
   'Общежитие',
   'БРСМ',
-  'ВПВ'
+  'ВПВ',
+  'Спорт'
 ];
 
 interface NewsListProps {

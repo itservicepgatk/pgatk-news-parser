@@ -37,6 +37,128 @@ import Ideology from './Ideology';
 import CuratorHelp from './CuratorHelp';
 import InterestGroups from './InterestGroups';
 import MilitaryPatriotic from './MilitaryPatriotic';
+import ProfkomRabotnikov from './ProfkomRabotnikov';
+import Osvod from './Osvod';
+import BelUnionWomen from './BelUnionWomen';
+import BelayaRus from './BelayaRus';
+import VeteransOrganization from './VeteransOrganization';
+import ProfkomStudents from './ProfkomStudents';
+import SchoolActiveCitizen from './SchoolActiveCitizen';
+import LaborHQ from './LaborHQ';
+import EducationConcept2030 from './EducationConcept2030';
+import LegalCulture from './LegalCulture';
+import Spps from './Spps';
+import IdnInspector from './IdnInspector';
+import UnifiedInformationDay from './UnifiedInformationDay';
+import UnderConstruction from './UnderConstruction';
+import HealthyLifestyle from './HealthyLifestyle';
+import InjuryPrevention from './InjuryPrevention';
+
+const SidebarLinkItem = ({ link, currentPath }: { link: any, currentPath: string }) => {
+  const isExternal = link.href.startsWith('http');
+  const isPdf = link.href.toLowerCase().endsWith('.pdf') || link.href.toLowerCase().includes('disk.yandex.');
+  const hasSub = link.submenu && link.submenu.length > 0;
+  
+  const isSubmenuActive = hasSub && link.submenu.some((sub: any) => currentPath === sub.href || currentPath.startsWith(sub.href + '/'));
+  const isActive = link.href === currentPath || isSubmenuActive;
+  
+  const [isOpen, setIsOpen] = useState(isSubmenuActive || false);
+
+  // Update open state if current path changes and falls into this submenu
+  useEffect(() => {
+    if (isSubmenuActive) setIsOpen(true);
+  }, [currentPath, isSubmenuActive]);
+
+  const LinkContent = (
+    <span className="flex items-center gap-2 leading-snug">
+      {isPdf ? (
+        <FileText className="w-4 h-4 text-rose-500 flex-shrink-0" />
+      ) : isExternal ? (
+        <ExternalLink className="w-4 h-4 text-blue-500 flex-shrink-0" />
+      ) : null}
+      <span>{link.label}</span>
+    </span>
+  );
+
+  const baseLinkClass = `group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${isActive && !hasSub ? 'bg-primary-50 text-primary-700 border-l-4 border-accent-500 translate-x-1' : 'text-slate-600 hover:bg-slate-50 hover:text-primary-900 border-l-4 border-transparent hover:translate-x-1'}`;
+
+  if (hasSub) {
+    return (
+      <div className="flex flex-col">
+        <button 
+          onClick={() => setIsOpen(!isOpen)}
+          className={`group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${isSubmenuActive ? 'text-primary-900 font-bold bg-slate-50' : 'text-slate-600 hover:bg-slate-50 hover:text-primary-900'}`}
+        >
+          {LinkContent}
+          <ChevronDown className={`w-4 h-4 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+        </button>
+        {isOpen && (
+          <div className="pl-4 pr-2 pb-1 pt-1 flex flex-col space-y-1 relative">
+            <div className="absolute left-6 top-0 bottom-0 w-px bg-slate-200"></div>
+            {link.submenu.map((subLink: any) => {
+              const isSubActive = subLink.href === currentPath;
+              const isSubExternal = subLink.href.startsWith('http');
+              const isSubPdf = subLink.href.toLowerCase().endsWith('.pdf') || subLink.href.toLowerCase().includes('disk.yandex.');
+              
+              const subLinkClass = `group flex items-center justify-between px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 relative z-10 ${isSubActive ? 'bg-primary-50 text-primary-700 border-l-2 border-accent-500' : 'text-slate-600 hover:bg-slate-50 hover:text-primary-900 border-l-2 border-transparent'}`;
+              
+              const SubLinkContent = (
+                <span className="flex items-center gap-2 leading-snug">
+                  {isSubPdf ? (
+                    <FileText className="w-4 h-4 text-rose-500 flex-shrink-0" />
+                  ) : isSubExternal ? (
+                    <ExternalLink className="w-4 h-4 text-blue-500 flex-shrink-0" />
+                  ) : null}
+                  <span>{subLink.label}</span>
+                </span>
+              );
+
+              if (isSubExternal) {
+                return (
+                  <a
+                    key={subLink.href}
+                    href={subLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={subLinkClass}
+                  >
+                    {SubLinkContent}
+                  </a>
+                );
+              }
+
+              return (
+                <Link
+                  key={subLink.href}
+                  to={subLink.href}
+                  className={subLinkClass}
+                >
+                  {SubLinkContent}
+                </Link>
+              );
+            })}
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  if (isExternal) {
+    return (
+      <a href={link.href} target="_blank" rel="noopener noreferrer" className={baseLinkClass}>
+        {LinkContent}
+        {isActive && !hasSub && <ChevronRight className="w-4 h-4 text-accent-500 flex-shrink-0 ml-2" />}
+      </a>
+    );
+  }
+
+  return (
+    <Link to={link.href} className={baseLinkClass}>
+      {LinkContent}
+      {isActive && !hasSub && <ChevronRight className="w-4 h-4 text-accent-500 flex-shrink-0 ml-2" />}
+    </Link>
+  );
+};
 
 const GenericPage: React.FC = () => {
   const location = useLocation();
@@ -74,6 +196,15 @@ const GenericPage: React.FC = () => {
     '/dokumentatsiya': 'В помощь куратору',
     '/ob-edineniya-po-interesam': 'Объединения по интересам',
     '/voenno-patrioticheskoe-vospitanie': 'Военно-патриотическое воспитание',
+    '/obshchestvennye-ob-edinenie-i-organizatsii': 'Общественные объединения и организации',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/profkom-rabotnikov': 'Профком работников',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/profkom-uchashchikhsya': 'Профком учащихся',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/osvod': 'Первичная организация ОСВОД',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/bszh': 'ПО ОО "Белорусский союз женщин"',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/belaya-rus': 'ПО РОО "Белая русь"',
+    '/obshchestvennye-ob-edinenie-i-organizatsii/veteranskaya': 'Первичная ветеранская организация',
+    '/okazanie-socialno-pedagogicheskoy-pomochi/8-novosti/1174-po-vsem-voprosam-otnosyashchimsya-k-kompetentsii-inspektsii-po-delam-nesovershennoletnikh-vy-mozhete-obratitsya-k-uchastkovomu-inspektoru-idn-pinskogo-govd': 'Инспекция по делам несовершеннолетних',
+    '/edinyj-den-informirovaniya': 'Единый день информирования',
   };
 
   if (customTitles[currentPath]) {
@@ -159,51 +290,9 @@ const GenericPage: React.FC = () => {
                 </div>
                 
                 <nav className="p-2 flex flex-col space-y-1">
-                  {sidebarLinks.map((link) => {
-                    const isActive = link.href === currentPath;
-                    const isExternal = link.href.startsWith('http');
-                    const isPdf = link.href.toLowerCase().endsWith('.pdf') || link.href.toLowerCase().includes('disk.yandex.');
-                    
-                    const LinkContent = (
-                      <>
-                        <span className="flex items-center gap-2 leading-snug">
-                          {isPdf ? (
-                            <FileText className="w-4 h-4 text-rose-500 flex-shrink-0" />
-                          ) : isExternal ? (
-                            <ExternalLink className="w-4 h-4 text-blue-500 flex-shrink-0" />
-                          ) : null}
-                          <span>{link.label}</span>
-                        </span>
-                        {isActive && <ChevronRight className="w-4 h-4 text-accent-500 flex-shrink-0 ml-2" />}
-                      </>
-                    );
-
-                    const linkClass = `group flex items-center justify-between px-4 py-3 rounded-lg text-sm font-medium transition-all duration-200 ${isActive ? 'bg-primary-50 text-primary-700 border-l-4 border-accent-500 translate-x-1' : 'text-slate-600 hover:bg-slate-50 hover:text-primary-900 border-l-4 border-transparent hover:translate-x-1'}`;
-
-                    if (isExternal) {
-                      return (
-                        <a
-                          key={link.href}
-                          href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={linkClass}
-                        >
-                          {LinkContent}
-                        </a>
-                      );
-                    }
-
-                    return (
-                      <Link
-                        key={link.href}
-                        to={link.href}
-                        className={linkClass}
-                      >
-                        {LinkContent}
-                      </Link>
-                    );
-                  })}
+                  {sidebarLinks.map((link) => (
+                    <SidebarLinkItem key={link.href} link={link} currentPath={currentPath} />
+                  ))}
                 </nav>
 
                 <div className="m-2 p-4 bg-primary-900 rounded-lg text-white text-center">
@@ -299,6 +388,40 @@ const GenericPage: React.FC = () => {
                  <InterestGroups />
               ) : currentPath === '/voenno-patrioticheskoe-vospitanie' || currentPath.startsWith('/voenno-patrioticheskoe-vospitanie/') ? (
                  <MilitaryPatriotic />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/profkom-rabotnikov' ? (
+                 <ProfkomRabotnikov />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/profkom-uchashchikhsya' ? (
+                 <ProfkomStudents />
+              ) : currentPath === '/informatsionno-obrazovatelnyj-proekt-shkola-aktivnogo-grazhdanina' ? (
+                 <SchoolActiveCitizen />
+              ) : currentPath === '/shtab-trudovykh-del' ? (
+                 <LaborHQ />
+              ) : currentPath === '/kontseptsiya-razvitiya-sistemy-obrazovaniya-respubliki-belarus-do-2030-goda' ? (
+                 <EducationConcept2030 />
+              ) : currentPath === '/pravovaya-kultura' ? (
+                 <LegalCulture />
+              ) : currentPath === '/obshchezhitie' ? (
+                 <Dormitory />
+              ) : currentPath === '/okazanie-socialno-pedagogicheskoy-pomochi' ? (
+                 <Spps />
+              ) : currentPath === '/okazanie-socialno-pedagogicheskoy-pomochi/8-novosti/1174-po-vsem-voprosam-otnosyashchimsya-k-kompetentsii-inspektsii-po-delam-nesovershennoletnikh-vy-mozhete-obratitsya-k-uchastkovomu-inspektoru-idn-pinskogo-govd' ? (
+                 <IdnInspector />
+              ) : currentPath === '/edinyj-den-informirovaniya' ? (
+                 <UnifiedInformationDay />
+              ) : currentPath === '/sportivnaya-zhizn' ? (
+                 <UnderConstruction />
+              ) : currentPath === '/zdorovyj-obraz-zhizni' ? (
+                 <HealthyLifestyle />
+              ) : currentPath === '/profilaktika-tramatizma' ? (
+                 <InjuryPrevention />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/osvod' ? (
+                 <Osvod />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/bszh' ? (
+                 <BelUnionWomen />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/belaya-rus' ? (
+                 <BelayaRus />
+              ) : currentPath === '/obshchestvennye-ob-edinenie-i-organizatsii/veteranskaya' ? (
+                 <VeteransOrganization />
               ) : isSectionRoot && hasSidebar ? (
                 <div className="animate-in fade-in duration-500">
                    <p className="text-lg text-slate-600 mb-8">

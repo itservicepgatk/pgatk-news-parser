@@ -78,8 +78,20 @@ export const MAIN_MENU: MenuItem[] = [
       { label: "В помощь куратору", href: "/dokumentatsiya" },
       { label: "Объединения по интересам", href: "/ob-edineniya-po-interesam" },
       { label: "Военно-патриотическое воспитание", href: "/voenno-patrioticheskoe-vospitanie" },
-      { label: "Общественные объединение и организации", href: "/obshchestvennye-ob-edinenie-i-organizatsii" },
-      { label: "Информационно образовательный проект ШАГ", href: "/informatsionno-obrazovatelnyj-proekt-shkola-aktivnogo-grazhdanina" },
+      { 
+        label: "Общественные объединение и организации", 
+        href: "/obshchestvennye-ob-edinenie-i-organizatsii",
+        submenu: [
+          { label: "ПО ОО БРСМ", href: "https://itservicepgatk.github.io/brsm-pgatk/index.html" },
+          { label: "Профком работников", href: "/obshchestvennye-ob-edinenie-i-organizatsii/profkom-rabotnikov" },
+          { label: "Первичная организация ОСВОД", href: "/obshchestvennye-ob-edinenie-i-organizatsii/osvod" },
+          { label: "ПО ОО \"Белорусский союз женщин\"", href: "/obshchestvennye-ob-edinenie-i-organizatsii/bszh" },
+          { label: "ПО РОО \"Белая русь\"", href: "/obshchestvennye-ob-edinenie-i-organizatsii/belaya-rus" },
+          { label: "Первичная ветеранская организация", href: "/obshchestvennye-ob-edinenie-i-organizatsii/veteranskaya" },
+          { label: "Профком учащихся", href: "/obshchestvennye-ob-edinenie-i-organizatsii/profkom-uchashchikhsya" }
+        ]
+      },
+      { label: 'Информационно образовательный проект "Школа активного гражданина"', href: "/informatsionno-obrazovatelnyj-proekt-shkola-aktivnogo-grazhdanina" },
       { label: "Штаб трудовых дел", href: "/shtab-trudovykh-del" },
       { label: "Концепция развития системы образования до 2030", href: "/kontseptsiya-razvitiya-sistemy-obrazovaniya-respubliki-belarus-do-2030-goda" },
       { label: "Правовая культура", href: "/pravovaya-kultura" },

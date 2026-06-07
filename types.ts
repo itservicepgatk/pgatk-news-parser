@@ -3,6 +3,7 @@ import { LucideIcon } from 'lucide-react';
 export interface SubMenuItem {
   label: string;
   href: string;
+  submenu?: SubMenuItem[];
 }
 
 export interface MenuItem {
