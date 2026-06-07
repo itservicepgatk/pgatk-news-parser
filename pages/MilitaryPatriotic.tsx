@@ -1,6 +1,7 @@
-import React from 'react';
-import { Shield, Flag, Target, Book, FileText, ChevronRight, Compass, ShieldCheck } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Shield, Flag, Target, Book, FileText, ChevronRight, Compass, ShieldCheck, Loader2, Calendar } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { fetchTelegramPosts, TelegramPost } from '../utils/telegram';
 
 const TASKS = [
   'Привитие глубокого уважения к национальному наследию, традициям, обычаям, культуре, религиям народа Беларуси',
@@ -37,50 +38,25 @@ const DOCUMENTS = [
   { title: 'Методические рекомендации по организации работы руководителя по военно-патриотическому воспитанию в учреждениях образования', href: 'https://ripo.by/index.php?id=6126' },
 ];
 
-const NEWS = [
-  { title: 'Просмотр и обсуждение фильма "Блокадный дневник". Учебная группа 222С', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2125-prosmotr-i-obsuzhdenie-filma-blokadnyj-dnevnik-uchebnaya-gruppa-222s' },
-  { title: '«Мы – граждане Беларуси». План мероприятий месячника военно-патриотического воспитания', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2123-my-grazhdane-belarusi-plan-meropriyatij-mesyachnika-voenno-patrioticheskogo-vospitaniya' },
-  { title: 'Просмотр и обсуждение художественного фильма «Собибор»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2112-prosmotr-i-obsuzhdenie-khudozhestvennogo-filma-sobibor-3' },
-  { title: 'Час не забвения «Память длиною в вечность»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2111-chas-ne-zabveniya-pamyat-dlinoyu-v-vechnost' },
-  { title: 'Экскурсию по памятным местам совершили учащиеся #ПГАТККЛЕЩЕВА', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2071-ekskursiyu-po-pamyatnym-mestam-sovershili-uchashchiesya-pgatkkleshcheva' },
-  { title: 'Диалоговая площадка "Союзное государство. 25 лет вместе"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2069-dialogovaya-ploshchadka-soyuznoe-gosudarstvo-25-let-vmeste' },
-  { title: 'В августе 44-го. Просмотр и обсуждение художественного фильма', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2068-v-avguste-44-go-prosmotr-i-obsuzhdenie-khudozhestvennogo-filma' },
-  { title: 'Константин Заслонов. Просмотр и обсуждение художественного фильма', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2060-konstantin-zaslonov-prosmotr-i-obsuzhdenie-khudozhestvennogo-filma' },
-  { title: 'Встреча учащихся выпускных групп с начальником отдела призыва на военную службу военного комиссариата', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2054-vstrecha-uchashchikhsya-vypusknykh-grupp-s-nachalnikom-otdela-prizyva-na-voennuyu-sluzhbu-voennogo-komissariata' },
-  { title: 'Посетили Пинский пограничный отряд. На экскурсии 431Б учебная группа.', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2044-posetili-pinskij-pogranichnyj-otryad-na-ekskursii-431b-uchebnaya-gruppa' },
-  { title: 'Мероприятие «Абитуриент- 2025», организованное УО "Военная академия Республики Беларуси" и высшими военными учебными заведениями', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2029-meropriyatie-abiturient-2025-organizovannoe-uo-voennaya-akademiya-respubliki-belarusi-i-vysshimi-voennymi-uchebnymi-zavedeniyami' },
-  { title: 'Встреча учащихся 4 курса с командиром роты ППСМ Пинского ГОВД', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/2000-vstrecha-uchashchikhsya-4-kursa-s-komandirom-roty-ppsm-pinskogo-govd' },
-  { title: 'В Пинске открыт памятный знак жертвам нацизма', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1970-v-pinske-otkryt-pamyatnyj-znak-zhertvam-natsizma' },
-  { title: 'Посетили войсковую часть 10198, базирующуюся в г. Лунинец', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1966-posetili-vojskovuyu-chast-10198-baziruyushchuyusya-v-g-luninets' },
-  { title: 'Учащиеся Пинского аграрно-технического колледжа имени А.Е.Клещева посетили Пинский пограничный отряд', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1953-uchashchiesya-pinskogo-agrarno-tekhnicheskogo-kolledzha-imeni-a-e-kleshcheva-posetili-pinskij-pogranichnyj-otryad' },
-  { title: 'ПРОСМОТР И ОБСУЖДЕНИЕ ХУДОЖЕСТВЕННОГО ФИЛЬМА «МАМА, Я ЖИВ!»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1932-prosmotr-i-obsuzhdenie-khudozhestvennogo-filma-mama-ya-zhiv' },
-  { title: 'Участие в праздничных мероприятиях, посвященных празднованию Дня Независимости Республики Беларусь', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1795-uchastie-v-prazdnichnykh-meropriyatiyakh-posvyashchennykh-prazdnovaniyu-dnya-nezavisimosti-respubliki-belarus' },
-  { title: 'Велопробег "Молодежь под мирным небом!"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1792-veloprobeg-molodezh-pod-mirnym-nebom' },
-  { title: 'В Пинске отметили годовщину первого партизанского боя', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1788-v-pinske-otmetili-godovshchinu-pervogo-partizanskogo-boya' },
-  { title: 'Национальный фильм «Мемориальные комплексы Беларуси»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1787-natsionalnyj-film-memorialnye-kompleksy-belarusi' },
-  { title: 'Фотовыставка "Завтра была война..."', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1773-fotovystavka-zavtra-byla-vojna' },
-  { title: 'Открытие памятного знака на месте массового расстрела жертв фашизма', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1772-otkrytie-pamyatnogo-znaka-na-meste-massovogo-rasstrela-zhertv-fashizma' },
-  { title: 'Экскурсия «Дорогами памяти»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1771-ekskursiya-dorogami-pamyati' },
-  { title: 'Документальный фильм "Говорит немая память"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1770-dokumentalnyj-film-govorit-nemaya-pamyat' },
-  { title: 'Документальный фильм "Перезвон"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1769-dokumentalnyj-film-perezvon' },
-  { title: 'С болью в сердце. Экскурсия по экспозиции', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1761-s-bolyu-v-serdtse-ekskursiya-po-ekspozitsii' },
-  { title: 'Посетили филиал Ивацевичского историко-краеведческого музея – мемориальный комплекс партизанской славы «Хованщина»', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1750-posetili-filial-ivatsevichskogo-istoriko-kraevedcheskogo-muzeya-memorialnyj-kompleks-partizanskoj-slavy-khovanshchina' },
-  { title: 'Просмотр художественного фильма "Константин Заслонов"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1747-prosmotr-khudozhestvennogo-filma-konstantin-zaslonov' },
-  { title: 'Военно-патриотическая игра "Зарница-2024" в #ПГАТККЛЕЩЕВА', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1732-voenno-patrioticheskaya-igra-zarnitsa-2024-v-pgatkkleshcheva' },
-  { title: 'Экспозиция "С болью в сердце..." В гостях Пинский аграрный технологический колледж', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1710-ekspozitsiya-s-bolyu-v-serdtse-v-gostyakh-pinskij-agrarnyj-tekhnologicheskij-kolledzh' },
-  { title: 'Просмотр и обсуждение художественного фильма "Гарнизон"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1628-prosmotr-i-obsuzhdenie-khudozhestvennogo-filma-garnizon' },
-  { title: 'Экскурсия по памятным местам', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1583-ekskursiya-po-pamyatnym-mestam' },
-  { title: '#ПГАТККЛЕЩЕВА: МОЛОДЕЖЬ ПОМНИТ!', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1568-pgatkkleshcheva-molodezh-pomnit' },
-  { title: 'Группа 322С на экскурсии в музее истории колледжа', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1560-gruppa-322s-na-ekskursii-v-muzee-istorii-kolledzha' },
-  { title: 'Группа 352С на экскурсии в Пинской межрайонной прокуратуре', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1559-gruppa-352s-na-ekskursii-v-pinskoj-mezhrajonnoj-prokurature' },
-  { title: 'Художественный фильм "В бой идут одни "старики""', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1517-khudozhestvennyj-film-v-boj-idut-odni-stariki-2' },
-  { title: 'Музейные комнаты ПолесГУ посетила учебная группа 131Б', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1508-muzejnye-komnaty-polesgu-posetila-uchebnaya-gruppa-131b' },
-  { title: 'Торжественное построение личного состава, приуроченное Дню милиции', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1507-torzhestvennoe-postroenie-lichnogo-sostava-priurochennoe-dnyu-militsii' },
-  { title: 'Информационный час на тему "Государственный деятель Беларуси - Пётр Миронович Машеров"', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1506-informatsionnyj-chas-na-temu-gosudarstvennyj-deyatel-belarusi-pjotr-mironovich-masherov' },
-  { title: 'Экскурсия в музейные комнаты. Учебная группа 341Б.', href: '/voenno-patrioticheskoe-vospitanie/8-novosti/1501-ekskursiya-v-muzejnye-komnaty-uchebnaya-gruppa-341b' },
-];
-
 const MilitaryPatriotic: React.FC = () => {
+  const [newsList, setNewsList] = useState<TelegramPost[]>([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchTelegramPosts().then(posts => {
+      if (posts && posts.length > 0) {
+        setNewsList(posts);
+      }
+      setLoading(false);
+    });
+  }, []);
+
+  const filteredNews = newsList.filter(news => {
+    if (!news.category) return false;
+    const cats = Array.isArray(news.category) ? news.category : [news.category];
+    return cats.some(c => c.toLowerCase() === 'впв');
+  }).slice(0, 9); // Показываем последние 9 новостей
+
   return (
     <div className="animate-in fade-in duration-500 w-full space-y-12">
       
@@ -190,24 +166,67 @@ const MilitaryPatriotic: React.FC = () => {
 
       {/* News Feed */}
       <div className="bg-white rounded-3xl p-8 border border-slate-200 shadow-sm mt-12">
-        <h3 className="text-2xl font-bold text-primary-900 mb-6 flex items-center gap-3">
-           <ShieldCheck className="w-6 h-6 text-red-600" />
-           Новости и мероприятия
-        </h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-          {NEWS.map((newsItem, idx) => (
-            <Link 
-              key={idx}
-              to={newsItem.href}
-              className="flex items-start gap-3 p-4 rounded-xl border border-slate-100 bg-slate-50 hover:bg-red-50 hover:border-red-100 transition-colors group"
-            >
-               <Compass className="w-5 h-5 text-slate-400 group-hover:text-red-500 shrink-0 mt-0.5 transition-colors" />
-               <span className="text-sm font-medium text-slate-700 group-hover:text-red-900 leading-snug line-clamp-3">
-                 {newsItem.title}
-               </span>
-            </Link>
-          ))}
+        <div className="flex items-center justify-between mb-8">
+           <h3 className="text-2xl font-bold text-primary-900 flex items-center gap-3">
+             <ShieldCheck className="w-6 h-6 text-red-600" />
+             Новости ВПВ
+           </h3>
+           <Link to="/news?category=ВПВ" className="text-red-600 font-medium hover:text-red-700 flex items-center gap-1 group transition-colors">
+              Все новости
+              <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+           </Link>
         </div>
+
+        {loading ? (
+          <div className="flex justify-center items-center py-20">
+            <Loader2 className="w-8 h-8 text-red-500 animate-spin" />
+          </div>
+        ) : filteredNews.length > 0 ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {filteredNews.map((newsItem) => (
+              <Link 
+                key={newsItem.id}
+                to={`/news/${newsItem.id}`}
+                className="group flex flex-col rounded-2xl border border-slate-100 bg-white hover:shadow-xl hover:shadow-red-900/5 transition-all overflow-hidden"
+              >
+                 <div className="aspect-[4/3] overflow-hidden bg-slate-100 relative">
+                   {newsItem.imageUrl ? (
+                     <img 
+                       src={newsItem.imageUrl} 
+                       alt={newsItem.title} 
+                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                     />
+                   ) : (
+                     <div className="w-full h-full flex items-center justify-center">
+                        <Compass className="w-12 h-12 text-slate-300" />
+                     </div>
+                   )}
+                   <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm text-xs font-bold text-red-600 px-3 py-1.5 rounded-full shadow-sm">
+                      #ВПВ
+                   </div>
+                 </div>
+                 <div className="p-5 flex flex-col flex-1">
+                   <div className="flex items-center gap-2 text-slate-400 text-xs font-medium mb-3">
+                     <Calendar className="w-3.5 h-3.5" />
+                     {newsItem.date}
+                   </div>
+                   <h4 className="text-base font-bold text-slate-800 group-hover:text-red-700 leading-snug line-clamp-3 mb-2">
+                     {newsItem.title}
+                   </h4>
+                   {newsItem.summary && (
+                     <p className="text-sm text-slate-500 line-clamp-2 mt-auto">
+                        {newsItem.summary}
+                     </p>
+                   )}
+                 </div>
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="text-center py-12 bg-slate-50 rounded-2xl border border-slate-100 border-dashed">
+             <p className="text-slate-500 font-medium">Новостей с меткой #ВПВ пока нет.</p>
+          </div>
+        )}
       </div>
 
     </div>
