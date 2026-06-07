@@ -89,21 +89,22 @@ const MilitaryPatriotic: React.FC = () => {
         <div className="absolute top-0 right-0 w-full h-full opacity-10">
           <svg className="absolute w-96 h-96 -top-10 -right-10 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
         </div>
-        <div className="relative z-10 flex flex-col lg:flex-row items-center gap-8">
-          <div className="flex-1">
-            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6">Военно-патриотическое воспитание</h2>
-            <div className="bg-red-900/40 p-6 rounded-2xl border border-red-500/30 backdrop-blur-sm">
-              <p className="text-lg leading-relaxed font-medium">
-                <span className="text-red-300 font-bold">Патриотизм</span> – это чувство любви к своей Родине, выраженное в активной деятельности по ее процветанию и защите от врагов. В этом определении заложена сущность идеологии патриотизма в общем виде. Конкретно направленность патриотизма определяется его идеологической основой.
-              </p>
-            </div>
-          </div>
-          <div className="w-full lg:w-1/3 shrink-0">
+        
+        <div className="relative z-10 flex flex-col items-center gap-8">
+          <div className="w-full max-w-4xl mx-auto">
              <img 
                src={`${import.meta.env.BASE_URL}images/Ideologiy/VPV/VPV.jpg`} 
                alt="Военно-патриотическое воспитание" 
-               className="w-full h-64 object-cover rounded-2xl shadow-lg border border-white/10"
+               className="w-full h-auto object-contain rounded-2xl shadow-2xl border-2 border-white/20"
              />
+          </div>
+          <div className="w-full">
+            <h2 className="text-3xl md:text-5xl font-display font-bold mb-6 text-center">Военно-патриотическое воспитание</h2>
+            <div className="bg-red-900/40 p-6 rounded-2xl border border-red-500/30 backdrop-blur-sm max-w-5xl mx-auto">
+              <p className="text-lg leading-relaxed font-medium text-center">
+                <span className="text-red-300 font-bold">Патриотизм</span> – это чувство любви к своей Родине, выраженное в активной деятельности по ее процветанию и защите от врагов. В этом определении заложена сущность идеологии патриотизма в общем виде. Конкретно направленность патриотизма определяется его идеологической основой.
+              </p>
+            </div>
           </div>
         </div>
       </div>

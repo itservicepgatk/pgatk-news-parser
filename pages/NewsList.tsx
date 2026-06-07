@@ -86,7 +86,7 @@ const NewsList: React.FC<NewsListProps> = ({ initialCategory = 'Все' }) => {
       <div className="max-w-7xl mx-auto px-4 md:px-8 -mt-8 md:-mt-16 relative z-20">
         
         {/* Category Tabs */}
-        <div className="flex overflow-x-auto pb-4 mb-6 md:mb-10 -mx-4 px-4 md:mx-0 md:px-0 gap-3 scrollbar-hide snap-x">
+        <div className="flex flex-wrap pb-4 mb-6 md:mb-10 gap-3">
           {NEWS_CATEGORIES.map(category => (
             <button
               key={category}
@@ -95,7 +95,7 @@ const NewsList: React.FC<NewsListProps> = ({ initialCategory = 'Все' }) => {
                 setCurrentPage(1);
               }}
               title={category === 'ВПВ' ? 'Военно-патриотическое воспитание' : undefined}
-              className={`whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-sm transition-all border shadow-sm snap-start ${
+              className={`whitespace-nowrap px-4 py-2 md:px-5 md:py-2.5 rounded-full font-bold text-xs md:text-sm transition-all border shadow-sm ${
                 selectedCategory === category
                   ? 'bg-accent-500 text-primary-900 border-accent-500 shadow-accent-500/30'
                   : 'bg-white text-slate-600 border-slate-200 hover:border-accent-400 hover:text-accent-600'
