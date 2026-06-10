@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Calendar, ChevronRight, Home as HomeIcon, ChevronLeft, Loader2, ExternalLink } from 'lucide-react';
 import { MOCK_NEWS } from '../constants';
 import { fetchTelegramPosts, TelegramPost } from '../utils/telegram';
@@ -14,12 +14,21 @@ const NEWS_CATEGORIES = [
   'Год белорусской женщины',
   'Жизнь колледжа',
   'Общежитие',
-  'БРСМ'
+  'БРСМ',
+  'ВПВ',
+  'Спорт'
 ];
 
-const NewsList: React.FC = () => {
+interface NewsListProps {
+  initialCategory?: string;
+}
+
+const NewsList: React.FC<NewsListProps> = ({ initialCategory = 'Все' }) => {
+  const location = useLocation();
+  const queryCategory = new URLSearchParams(location.search).get('category');
+
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedCategory, setSelectedCategory] = useState('Все');
+  const [selectedCategory, setSelectedCategory] = useState(queryCategory || initialCategory);
 
   const [newsList, setNewsList] = useState<TelegramPost[]>([]);
   const [loading, setLoading] = useState(true);
@@ -59,7 +68,7 @@ const NewsList: React.FC = () => {
     <div className="bg-slate-50 min-h-screen pb-20 font-sans">
       
       {/* Header Block (Unified Style) */}
-      <div className="bg-primary-900 text-white pt-8 pb-16 md:pt-12 md:pb-24 relative overflow-hidden">
+      <div className="bg-primary-900 text-white pt-8 pb-12 md:pt-12 md:pb-20 relative overflow-hidden">
         <div className="absolute top-0 right-0 w-96 h-96 bg-accent-500/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full blur-3xl -ml-10 -mb-10 pointer-events-none"></div>
         
@@ -71,35 +80,35 @@ const NewsList: React.FC = () => {
             <ChevronRight className="w-3 h-3 opacity-40" />
             <span className="text-accent-500 font-bold">Новости</span>
           </nav>
-          <h1 className="text-3xl md:text-5xl font-display font-bold leading-tight">
+          <h1 className="text-3xl md:text-5xl font-display font-bold leading-tight mb-8 md:mb-10">
             Новости и события
           </h1>
+
+          {/* Category Tabs */}
+          <div className="flex flex-wrap gap-3">
+            {NEWS_CATEGORIES.map(category => (
+              <button
+                key={category}
+                onClick={() => {
+                  setSelectedCategory(category);
+                  setCurrentPage(1);
+                }}
+                title={category === 'ВПВ' ? 'Военно-патриотическое воспитание' : undefined}
+                className={`whitespace-nowrap px-4 py-2 md:px-5 md:py-2.5 rounded-full font-bold text-xs md:text-sm transition-all border shadow-sm ${
+                  selectedCategory === category
+                    ? 'bg-accent-500 text-primary-900 border-accent-500 shadow-accent-500/30'
+                    : 'bg-white/10 text-white border-white/20 hover:border-accent-400 hover:text-accent-400'
+                }`}
+              >
+                {category === 'ВПВ' ? '#ВПВ' : category}
+              </button>
+            ))}
+          </div>
         </div>
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-4 md:px-8 -mt-8 md:-mt-16 relative z-20">
-        
-        {/* Category Tabs */}
-        <div className="flex overflow-x-auto pb-4 mb-6 md:mb-10 -mx-4 px-4 md:mx-0 md:px-0 gap-3 scrollbar-hide snap-x">
-          {NEWS_CATEGORIES.map(category => (
-            <button
-              key={category}
-              onClick={() => {
-                setSelectedCategory(category);
-                setCurrentPage(1);
-              }}
-              className={`whitespace-nowrap px-5 py-2.5 rounded-full font-bold text-sm transition-all border shadow-sm snap-start ${
-                selectedCategory === category
-                  ? 'bg-accent-500 text-primary-900 border-accent-500 shadow-accent-500/30'
-                  : 'bg-white text-slate-600 border-slate-200 hover:border-accent-400 hover:text-accent-600'
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-
+      <div className="max-w-7xl mx-auto px-4 md:px-8 -mt-6 md:-mt-8 relative z-20">
         {/* News Grid */}
         {loading ? (
           <div className="flex justify-center items-center h-64 mb-12">
@@ -119,8 +128,12 @@ const NewsList: React.FC = () => {
                     />
                     <div className="absolute top-4 left-4 flex flex-wrap gap-2 z-10 max-w-[90%]">
                       {(Array.isArray(news.category) ? news.category : [news.category || 'Telegram']).map((cat, idx) => (
-                        <span key={idx} className="bg-accent-500 text-primary-900 text-xs font-bold px-2 py-1 rounded shadow-sm">
-                          {cat}
+                        <span 
+                          key={idx} 
+                          className="bg-accent-500 text-primary-900 text-xs font-bold px-2 py-1 rounded shadow-sm"
+                          title={cat === 'ВПВ' ? 'Военно-патриотическое воспитание' : undefined}
+                        >
+                          {cat === 'ВПВ' ? '#ВПВ' : cat}
                         </span>
                       ))}
                     </div>
