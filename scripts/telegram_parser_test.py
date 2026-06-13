@@ -6,13 +6,7 @@ import re
 import shutil
 from datetime import datetime
 
-if os.environ.get("GITHUB_ACTIONS"):
-    TARGET_IMG_DIR = "images/news"
-    URL_PREFIX = "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/"
-else:
-    TARGET_IMG_DIR = r"d:\Workspace\Web\PGATK Website\public\images\news"
-    URL_PREFIX = "/images/news/"
-
+TARGET_IMG_DIR = r"d:\Workspace\Web\PGATK Website\public\images\news"
 if not os.path.exists(TARGET_IMG_DIR):
     os.makedirs(TARGET_IMG_DIR, exist_ok=True)
 
@@ -89,12 +83,9 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
             id_match = re.search(r'/(\d+)$', link)
             post_id = id_match.group(1) if id_match else str(datetime.now().timestamp())
 
-            # Поскольку теперь мы скачиваем картинки, ссылки больше не протухают.
-            # Поэтому мы останавливаем парсинг сразу, как только дошли до уже спарсенного поста,
-            # чтобы не перекачивать все посты заново и не вешать GitHub Actions.
-            if str(post_id) in existing_ids:
-                reached_old_dates = True
-                break
+            # Если мы уже спарсили этот пост ранее, мы всё равно продолжаем
+            # парсить страницу, чтобы обновить ссылки на картинки (они протухают со временем)
+            # Остановка произойдет только по дате (год < 2026) или по лимиту страниц.
 
             text_node = msg.find('div', class_='tgme_widget_message_text')
             if not text_node:
@@ -121,9 +112,9 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                     if match:
                         img_url = match.group(1)
                         local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.jpg")
-                        local_url = f"{URL_PREFIX}{post_id}_{img_idx}.jpg"
+                        local_url = f"/images/news/{post_id}_{img_idx}.jpg"
                         
-                        download_image(img_url, local_filename)
+                        # download_image(img_url, local_filename)
                         images.append(local_url)
                         img_idx += 1
             
@@ -137,9 +128,9 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                         if match:
                             img_url = match.group(1)
                             local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.jpg")
-                            local_url = f"{URL_PREFIX}{post_id}_{img_idx}.jpg"
+                            local_url = f"/images/news/{post_id}_{img_idx}.jpg"
                             
-                            download_image(img_url, local_filename)
+                            # download_image(img_url, local_filename)
                             images.append(local_url)
                             img_idx += 1
                             
