@@ -13,17 +13,13 @@ try:
 except ImportError:
     HAS_CV2 = False
 
-if os.environ.get("GITHUB_ACTIONS"):
-    TARGET_IMG_DIR = "images/news"
-    URL_PREFIX = "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/"
-else:
-    TARGET_IMG_DIR = r"d:\Workspace\Web\PGATK Website\public\images\news"
-    URL_PREFIX = "/images/news/"
+TARGET_IMG_DIR = "images/news"
+URL_PREFIX = "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/"
 
 if not os.path.exists(TARGET_IMG_DIR):
     os.makedirs(TARGET_IMG_DIR, exist_ok=True)
 
-def smart_crop_16_9(image_path):
+def smart_crop_16_9(image_path, target_webp_path):
     if not HAS_CV2:
         return False
     
@@ -36,80 +32,84 @@ def smart_crop_16_9(image_path):
     target_ratio = 16.0 / 9.0
     current_ratio = w / h
     
-    if abs(current_ratio - target_ratio) < 0.01:
-        return True # already 16:9
-        
-    # Load cascade
-    cascade_path = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
-    face_cascade = cv2.CascadeClassifier(cascade_path)
+    cropped = img
     
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, 1.1, 4)
-    
-    if current_ratio < target_ratio:
-        # Image is taller than 16:9, crop vertically
-        target_w = w
-        target_h = int(w / target_ratio)
+    if abs(current_ratio - target_ratio) > 0.01:
+        # Load cascade
+        cascade_path = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
+        face_cascade = cv2.CascadeClassifier(cascade_path)
         
-        if len(faces) > 0:
-            min_y = min([y for x,y,fw,fh in faces])
-            max_y = max([y+fh for x,y,fw,fh in faces])
-            faces_center_y = (min_y + max_y) // 2
+        gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+        faces = face_cascade.detectMultiScale(gray, 1.1, 4)
+        
+        if current_ratio < target_ratio:
+            # Image is taller than 16:9, crop vertically
+            target_w = w
+            target_h = int(w / target_ratio)
+            
+            if len(faces) > 0:
+                min_y = min([y for x,y,fw,fh in faces])
+                max_y = max([y+fh for x,y,fw,fh in faces])
+                faces_center_y = (min_y + max_y) // 2
+            else:
+                faces_center_y = h // 2
+                
+            y1 = faces_center_y - target_h // 2
+            y2 = y1 + target_h
+            
+            if y1 < 0:
+                y1 = 0
+                y2 = target_h
+            elif y2 > h:
+                y2 = h
+                y1 = h - target_h
+                
+            cropped = img[y1:y2, 0:target_w]
+            
         else:
-            faces_center_y = h // 2
+            # Image is wider than 16:9, crop horizontally
+            target_h = h
+            target_w = int(h * target_ratio)
             
-        y1 = faces_center_y - target_h // 2
-        y2 = y1 + target_h
-        
-        if y1 < 0:
-            y1 = 0
-            y2 = target_h
-        elif y2 > h:
-            y2 = h
-            y1 = h - target_h
+            if len(faces) > 0:
+                min_x = min([x for x,y,fw,fh in faces])
+                max_x = max([x+fw for x,y,fw,fh in faces])
+                faces_center_x = (min_x + max_x) // 2
+            else:
+                faces_center_x = w // 2
+                
+            x1 = faces_center_x - target_w // 2
+            x2 = x1 + target_w
             
-        cropped = img[y1:y2, 0:target_w]
-        
-    else:
-        # Image is wider than 16:9, crop horizontally
-        target_h = h
-        target_w = int(h * target_ratio)
-        
-        if len(faces) > 0:
-            min_x = min([x for x,y,fw,fh in faces])
-            max_x = max([x+fw for x,y,fw,fh in faces])
-            faces_center_x = (min_x + max_x) // 2
-        else:
-            faces_center_x = w // 2
+            if x1 < 0:
+                x1 = 0
+                x2 = target_w
+            elif x2 > w:
+                x2 = w
+                x1 = w - target_w
+                
+            cropped = img[0:target_h, x1:x2]
             
-        x1 = faces_center_x - target_w // 2
-        x2 = x1 + target_w
-        
-        if x1 < 0:
-            x1 = 0
-            x2 = target_w
-        elif x2 > w:
-            x2 = w
-            x1 = w - target_w
-            
-        cropped = img[0:target_h, x1:x2]
-        
-    cv2.imwrite(image_path, cropped)
+    cv2.imwrite(target_webp_path, cropped, [cv2.IMWRITE_WEBP_QUALITY, 85])
     return True
 
-def download_image(url, local_filename):
-    if not os.path.exists(local_filename):
+def download_image(url, target_webp_path):
+    if not os.path.exists(target_webp_path):
         try:
+            temp_jpg = target_webp_path.replace('.webp', '_temp.jpg')
             r = requests.get(url, stream=True)
             if r.status_code == 200:
-                with open(local_filename, 'wb') as f:
+                with open(temp_jpg, 'wb') as f:
                     for chunk in r.iter_content(1024):
                         f.write(chunk)
                 
-                # Apply smart crop if possible
-                smart_crop_16_9(local_filename)
+                # Apply smart crop and convert to webp
+                success = smart_crop_16_9(temp_jpg, target_webp_path)
                 
-                return True
+                if os.path.exists(temp_jpg):
+                    os.remove(temp_jpg)
+                    
+                return success
         except Exception as e:
             print(f"Failed to download image {url}: {e}")
     return False
@@ -205,8 +205,8 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                     match = re.search(r"background-image:url\('([^']+)'\)", style)
                     if match:
                         img_url = match.group(1)
-                        local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.jpg")
-                        local_url = f"{URL_PREFIX}{post_id}_{img_idx}.jpg"
+                        local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.webp")
+                        local_url = f"{URL_PREFIX}{post_id}_{img_idx}.webp"
                         
                         download_image(img_url, local_filename)
                         images.append(local_url)
@@ -221,8 +221,8 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                         match = re.search(r"background-image:url\('([^']+)'\)", style)
                         if match:
                             img_url = match.group(1)
-                            local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.jpg")
-                            local_url = f"{URL_PREFIX}{post_id}_{img_idx}.jpg"
+                            local_filename = os.path.join(TARGET_IMG_DIR, f"{post_id}_{img_idx}.webp")
+                            local_url = f"{URL_PREFIX}{post_id}_{img_idx}.webp"
                             
                             download_image(img_url, local_filename)
                             images.append(local_url)
