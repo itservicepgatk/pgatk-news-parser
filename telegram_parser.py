@@ -165,10 +165,7 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                     except Exception:
                         pass
 
-            # Останавливаем парсинг, если дошли до дат раньше 1 января 2026
-            if dt.year < 2026:
-                reached_old_dates = True
-                break
+            # Больше не ограничиваем по году, так как мы хотим полную историю!
 
             # ID поста
             id_match = re.search(r'/(\d+)$', link)
@@ -320,7 +317,7 @@ if __name__ == '__main__':
             print(f"Error loading existing JSON: {e}")
 
     print(f"Fetching new posts from {channel_url}...")
-    # Парсим новые (или старые до 2026 года)
+    # Парсим новые посты (при регулярном запуске хватит и 100 страниц, так как мы останавливаемся при нахождении старого ID)
     new_posts = parse_telegram_channel(channel_url, existing_ids, max_pages=100)
     
     print(f"Fetched {len(new_posts)} valid new posts.")
