@@ -190,6 +190,10 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
             if not clean_text:
                 continue
 
+            # Сохраняем безопасный HTML для отображения ссылок и эмодзи
+            content_html = text_node.decode_contents()
+            content_html = re.sub(r'href="\?q=', r'href="https://t.me/pgatkk?q=', content_html)
+
 
 
             # Фото
@@ -303,6 +307,7 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                 'id': post_id,
                 'title': title,
                 'summary': summary,
+                'content_html': content_html,
                 'imageUrl': image_url,
                 'date': date_str,
                 'category': post_categories,
