@@ -348,12 +348,19 @@ if __name__ == '__main__':
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(final_posts, f, ensure_ascii=False, indent=2)
     
+    # Сохраняем последние 15 новостей в отдельный легкий файл
+    latest_file = 'telegram_news_latest.json'
+    with open(latest_file, 'w', encoding='utf-8') as f:
+        json.dump(final_posts[:15], f, ensure_ascii=False, indent=2)
+    
     # Также копируем файл в папку сайта для надежности
     website_json = r"d:\Workspace\Web\PGATK Website\public\telegram_news.json"
+    website_latest = r"d:\Workspace\Web\PGATK Website\public\telegram_news_latest.json"
     try:
         shutil.copy2(output_file, website_json)
-        print(f"Successfully copied to {website_json}")
+        shutil.copy2(latest_file, website_latest)
+        print(f"Successfully copied to {website_json} and {website_latest}")
     except Exception as e:
         print(f"Failed to copy json to website directory: {e}")
         
-    print(f"Successfully saved {len(final_posts)} total posts to {output_file}")
+    print(f"Successfully saved {len(final_posts)} total posts to {output_file} and top 15 to {latest_file}")
