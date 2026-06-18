@@ -251,27 +251,53 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                 title = clean_text
                 summary = clean_text
                     
-            # Определение категорий
+            # Определение категорий: умный скоринг
             categories_dict = {
                 'Профориентация': ['профориентац', 'абитуриент', 'поступай', 'профессия'],
                 'Профилактика': ['профилактик', 'безопасност', 'мчс', 'гаи', 'наркоти', 'преступлен', 'кибер', 'мошенник'],
-                'Достижения': ['победител', 'награжд', 'диплом', 'чемпион', 'заняли', 'конкурс', 'олимпиад', 'успеш', 'достижен'],
+                'Достижения': ['победител', 'награжд', 'диплом', 'чемпион', 'заняли', 'конкурс', 'олимпиад', 'успеш', 'достижен', 'гордимся'],
                 'Год белорусской женщины': ['женщин', 'девушк', r'\bматери\b', r'\bмать\b'],
-                'Жизнь колледжа': ['праздник', 'мероприяти', 'акция', 'выставк', 'колледж', 'экскурси', 'соревновани', 'концерт', 'конференци', 'преподавател', 'встреч', 'студент', 'учащи'],
+                'Жизнь колледжа': ['праздник', 'мероприяти', 'акция', 'выставк', 'колледж', 'экскурси', 'соревновани', 'концерт', 'конференци', 'преподавател', 'встреч', 'студент', 'учащи', 'директор', 'администрация'],
                 'Общежитие': ['общежити'],
-                'БРСМ': ['брсм', 'молодеж', 'волонтер'],
-                'ВПВ': ['впв', 'военно-патриотическ', 'патриотическ', 'патриот', 'военн'],
-                'Спорт': ['спорт', 'соревнован', 'турнир', 'чемпионат', 'матч', 'атлет', 'физкультур', 'эстафет']
+                'БРСМ': ['брсм', 'молодеж', 'волонтер', 'активист'],
+                'ВПВ': ['впв', 'военно-патриотическ', 'патриотическ', 'патриот', 'военн', 'историческ', 'память'],
+                'Спорт': ['спорт', 'соревнован', 'турнир', 'чемпионат', 'матч', 'атлет', 'физкультур', 'эстафет', 'волейбол', 'баскетбол', 'футбол', 'теннис'],
+                'Официально': ['депутат', 'собрани', 'министр', 'заседани', 'власт', 'государств', 'республик', 'закон', 'парламент']
             }
             
-            post_categories = []
+            category_scores = {cat: 0 for cat in categories_dict}
             clean_text_lower = clean_text.lower()
+            title_lower = title.lower()
+            
             for cat, keywords in categories_dict.items():
-                if any(re.search(kw, clean_text_lower) if '\\b' in kw else kw in clean_text_lower for kw in keywords):
-                    post_categories.append(cat)
+                for kw in keywords:
+                    if '\\b' in kw:
+                        title_matches = len(re.findall(kw, title_lower))
+                        body_matches = len(re.findall(kw, clean_text_lower))
+                    else:
+                        title_matches = title_lower.count(kw)
+                        body_matches = clean_text_lower.count(kw)
                     
+                    # Слова в заголовке дают 3 балла, в теле - 1 балл
+                    category_scores[cat] += (title_matches * 3) + body_matches
+                    
+            post_categories = []
+            if any(score > 0 for score in category_scores.values()):
+                # Сортируем по убыванию очков
+                sorted_cats = sorted(category_scores.items(), key=lambda x: x[1], reverse=True)
+                
+                best_cat, best_score = sorted_cats[0]
+                if best_score > 0:
+                    post_categories.append(best_cat)
+                
+                # Добавляем вторую категорию, только если у нее достаточно много баллов (>= 3)
+                if len(sorted_cats) > 1:
+                    second_cat, second_score = sorted_cats[1]
+                    if second_score >= 3 and second_score >= best_score * 0.4:
+                        post_categories.append(second_cat)
+                        
             if not post_categories:
-                post_categories = ['Telegram']
+                post_categories = ['Новости']
 
             page_posts.append({
                 'id': post_id,
