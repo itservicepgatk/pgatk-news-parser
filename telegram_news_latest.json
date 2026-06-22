@@ -1,5 +1,23 @@
 [
   {
+    "id": "12055",
+    "title": "🪔 Общенациональная минута молчания.",
+    "summary": "Вечная слава героям!",
+    "content_html": "<tg-emoji emoji-id=\"5267362206940413788\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FAA94.png')\"><b>🪔</b></i></tg-emoji> <b>Общенациональная минута молчания.<br/>Вечная слава героям!</b>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12055_0.webp",
+    "date": "22.06.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12055",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12055_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12055_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12055_2.webp"
+    ]
+  },
+  {
     "id": "12053",
     "title": "‼️ 22 ИЮНЯ в 12:00 память погибших в годы Великой Отечественной войны Беларусь почтит общенациональной МИНУТОЙ МОЛЧАНИЯ",
     "summary": "📺📻📢 В эфире телеканалов и радиостанций, в воинских частях, на улицах, площадях и в других общественных местах страны прозвучат удары метронома и траурная мелодия реквиема — как символ всенародной скорби.\n\n🔔🔊 В этот же час во всех храмах раздастся колокольный набат, а на транспорте — сигнальные гудки. В ряде мест будет временно остановлено движение🚇🚃🚂.\n\n🕯 Белорусы свято чтут память всех, кто погиб от рук нацистов в самой жестокой войне в истории человечества, и тех, кто мужественно сражался и одержал Победу ради нашего мирного будущего и будущего следующих поколений.",
@@ -255,26 +273,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11993_0.webp"
-    ]
-  },
-  {
-    "id": "11987",
-    "title": "Республиканская акция «Летний патруль» 🌊",
-    "summary": "12 июня представители МООП Пинского аграрно-технического колледжа им. А.Е. Клещева  провели рейд в рамках республиканской акции «Летний патруль» 🛡 по набережной реки Пины.\nЛето в самом разгаре ☀️, и безопасность у воды остается приоритетом. Бойцы напомнили о важных правилах безопасного поведения: ✅ Не купаться в необорудованных местах; ✅ Следить за детьми у воды; ✅ Не оставлять мусор и не разводить костры в жаркую погоду 🔥.\nОтветственное отношение к летнему отдыху поможет сохранить здоровье и жизнь каждого! 🚶‍♂️🚶‍♀️",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_0.webp",
-    "date": "12.06.2026",
-    "category": [
-      "Жизнь колледжа",
-      "Официально"
-    ],
-    "link": "https://t.me/pgatkk/11987",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_3.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/11987_4.webp"
     ]
   }
 ]
