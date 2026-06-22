@@ -2,7 +2,7 @@ name: Update Telegram News
 
 on:
   schedule:
-    - cron: '0 */4 * * *' # Every 4 hours
+    - cron: '*/30 * * * *' # Every 30 minutes
   workflow_dispatch: # Allow manual trigger
 
 permissions:
