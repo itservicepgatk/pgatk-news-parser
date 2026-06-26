@@ -1,5 +1,21 @@
 [
   {
+    "id": "12160",
+    "title": "С 26 по 28 июня фестиваль искусств «Зори над Пиной».",
+    "summary": "Вас ждут три дня творчества, красоты и вдохновения. Отличная возможность погрузиться в мир искусства и отлично провести время!\n\nДо встречи на празднике!",
+    "content_html": "<b>С 26 по 28 июня фестиваль искусств «Зори над Пиной».</b><br/><br/><i>Вас ждут три дня творчества, красоты и вдохновения. Отличная возможность погрузиться в мир искусства и отлично провести время!<br/></i><br/>До встречи на празднике!",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12160_0.webp",
+    "date": "26.06.2026",
+    "category": [
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12160",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12160_0.webp"
+    ]
+  },
+  {
     "id": "12156",
     "title": "Молодёжная экспедиция: посещение музейных комнат Полесского государственного университета",
     "summary": "В рамках республиканской недели молодежи и студенчества «Твой драйв. Твой успех. Твоя страна» учащиеся колледжа #ПГАТККЛЕЩЕВА продолжают активно знакомиться с богатой историей и культурой нашего города. 25 июня учебная группа 111Б совершила  экскурсию по Музейным комнатам Полесского государственного университета.\nЭкспозиции музея позволили ребятам окунуться в историю, а особое внимание было уделено важному и трагическому периоду — геноциду белорусского народа в годы Великой Отечественной войны. Участники заметили, насколько важно помнить и уважать историю, чтобы не допустить ошибок прошлого.\n🔍 Такой опыт помогает молодёжи лучше понять свою историю и укрепляет патриотические ценности.",
@@ -277,25 +293,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12092_0.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12092_1.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12092_2.webp"
-    ]
-  },
-  {
-    "id": "12088",
-    "title": "Единый кураторский час «Память и боль белорусской земли» 🇧🇾",
-    "summary": "23 июня в рамках Республиканского марафона молодёжи и студенчества для учащихся первого курса прошёл кураторский час «Память и боль белорусской земли».\nВ центре внимания — не только хронология сражений, а личные трагедии миллионов людей и цена, которую наш народ заплатил за свободу. 💔\nРебята рассматривали фронтовые письма ✉️ и обсуждали, почему десятилетия спустя эта рана всё ещё отзывается в наших сердцах. Особую атмосферу создали кадры кинохроники 🎥, которые помогли первокурсникам эмоционально прочувствовать боль утрат и радость Великой Победы. 🕊🎉\nГлавный вывод участников: пока мы помним героев и передаём эту скорбь из поколения в поколение, связь времён не прервётся. \n\nЭтот час стал напоминанием: память — это не просто даты в учебнике, а наша живая совесть.",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Единый кураторский час «Память и боль белорусской земли» <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87A7F09F87BE.png')\"><b>🇧🇾</b></i></b><br/><br/>23 июня в рамках Республиканского марафона молодёжи и студенчества для учащихся первого курса прошёл кураторский час «Память и боль белорусской земли».<br/>В центре внимания — не только хронология сражений, а личные трагедии миллионов людей и цена, которую наш народ заплатил за свободу. <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9294.png')\"><b>💔</b></i><br/><blockquote>Ребята рассматривали фронтовые письма <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29C89.png')\"><b>✉️</b></i> и обсуждали, почему десятилетия спустя эта рана всё ещё отзывается в наших сердцах. Особую атмосферу создали кадры кинохроники <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8EA5.png')\"><b>🎥</b></i>, которые помогли первокурсникам эмоционально прочувствовать боль утрат и радость Великой Победы. <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F958A.png')\"><b>🕊</b></i><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')\"><b>🎉</b></i></blockquote><br/>Главный вывод участников: пока мы помним героев и передаём эту скорбь из поколения в поколение, связь времён не прервётся. <br/><br/><b>Этот час стал напоминанием: память — это не просто даты в учебнике, а наша живая совесть.</b></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12088_0.webp",
-    "date": "23.06.2026",
-    "category": [
-      "ВПВ"
-    ],
-    "link": "https://t.me/pgatkk/12088",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12088_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12088_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12088_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12088_3.webp"
     ]
   }
 ]
