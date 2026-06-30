@@ -1,5 +1,21 @@
 [
   {
+    "id": "12204",
+    "title": "⚡️Суточные оперативные данные по регионам⚡️",
+    "summary": "(за прошедшие сутки)\n\nСпасенных: 9 человек \nУтонувших: 1 человек \n\n🔴Подписаться на канал ОСВОД Беларуси",
+    "content_html": "<b><tg-emoji emoji-id=\"5258203794772085854\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></tg-emoji></b>Суточные оперативные данные по регионам<b><tg-emoji emoji-id=\"5258203794772085854\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></tg-emoji></b><b><br/>(за прошедшие сутки)<br/><br/></b>Спасенных: 9 человек <br/>Утонувших: 1 человек <b><br/><br/></b><b><tg-emoji emoji-id=\"5335006468678626110\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji></b><a href=\"https://t.me/osvodrs\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b>Подписаться на канал ОСВОД Беларуси</b></a>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12204_0.webp",
+    "date": "30.06.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12204",
+    "hasVideo": true,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12204_0.webp"
+    ]
+  },
+  {
     "id": "12192",
     "title": "⚡️Столбик термометра в Пинске перевалил за +39°C.",
     "summary": "На 14:10 — ровно 39,4 градуса. Такие данные приводит Белгидромет на своей температурной карте. Жара бьёт рекорды!\n\n@pinsk_newsPV\nЮТУБ | САЙТ| ИНСТ | ВК | ОК | ФЕ | \n\nПрислать новость",
