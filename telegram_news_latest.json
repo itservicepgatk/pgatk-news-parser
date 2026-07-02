@@ -1,5 +1,21 @@
 [
   {
+    "id": "12213",
+    "title": "‼️‼️‼️ВАЖНАЯ ИНФОРМАЦИЯ",
+    "summary": "#ПГАТККЛЕЩЕВА- выбор лучших!",
+    "content_html": "<tg-emoji emoji-id=\"5336810827389352598\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E280BC.png')\"><b>‼️</b></i></tg-emoji><tg-emoji emoji-id=\"5336810827389352598\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E280BC.png')\"><b>‼️</b></i></tg-emoji><tg-emoji emoji-id=\"5336810827389352598\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E280BC.png')\"><b>‼️</b></i></tg-emoji><b>ВАЖНАЯ ИНФОРМАЦИЯ</b><br/><br/><a href=\"https://t.me/pgatkk?q=%23%D0%9F%D0%93%D0%90%D0%A2%D0%9A%D0%9A%D0%9B%D0%95%D0%A9%D0%95%D0%92%D0%90\"><i>#ПГАТККЛЕЩЕВА</i></a><i>- выбор лучших!</i>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12213_0.webp",
+    "date": "02.07.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12213",
+    "hasVideo": true,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12213_0.webp"
+    ]
+  },
+  {
     "id": "12208",
     "title": "Встреча с инспектором ИДН – «Безопасные каникулы»🏫👮‍♂️",
     "summary": "01 июля с учащимися колледжа состоялась встреча с инспектором ИДН Ольгой Николаевной Сакович. Инспектор напомнила ребятам о правилах поведения на дорогах 🚦, в общественных местах 🏙 и на водоёмах 🌊, об ответственности за правонарушения, а также о том, как не стать жертвой преступления 🚫. Особое внимание уделили безопасности в интернете 💻 и правилам общения с незнакомцами 🙅‍♂️\n\nБерегите себя и помните: ваша безопасность – в ваших руках! ☀️",
@@ -230,25 +246,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12173_0.webp"
-    ]
-  },
-  {
-    "id": "12169",
-    "title": "🌸 Ребята-волонтёры преобразили территорию около общежития 🌿✨",
-    "summary": "26 июня учащиеся, проживающие в общежитии, в рамках недели молодежи и студенчества сделали настоящий вклад в благоустройство. Вооружившись лопатами и хорошим настроением, они высадили цветы возле своего общежития.\n\n🌼 Такие инициативы помогают сделать окружающую среду более привлекательной и приятной для всех жильцов и прохожих. Ребята не только украсили территорию, но и проявили заботу о родном городе, показывая пример активной гражданской позиции.\n\n👏 Молодёжь показывает, что даже небольшие поступки могут создавать вокруг уют и красоту!",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8CB8.png')\"><b>🌸</b></i> Ребята-волонтёры преобразили территорию около общежития <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8CBF.png')\"><b>🌿</b></i><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29CA8.png')\"><b>✨</b></i></b><br/><br/>26 июня учащиеся, проживающие в общежитии, в рамках недели молодежи и студенчества сделали настоящий вклад в благоустройство. Вооружившись лопатами и хорошим настроением, они высадили цветы возле своего общежития.<br/><br/><blockquote><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8CBC.png')\"><b>🌼</b></i> Такие инициативы помогают сделать окружающую среду более привлекательной и приятной для всех жильцов и прохожих. Ребята не только украсили территорию, но и проявили заботу о родном городе, показывая пример активной гражданской позиции.</blockquote><br/><br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F918F.png')\"><b>👏</b></i> Молодёжь показывает, что даже небольшие поступки могут создавать вокруг уют и красоту!</div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12169_0.webp",
-    "date": "26.06.2026",
-    "category": [
-      "Общежитие"
-    ],
-    "link": "https://t.me/pgatkk/12169",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12169_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12169_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12169_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12169_3.webp"
     ]
   }
 ]
