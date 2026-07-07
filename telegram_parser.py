@@ -155,6 +155,69 @@ def download_image(url, target_webp_path):
             print(f"Failed to download image {url}: {e}")
     return False
 
+def extract_images_from_embed(post_link):
+    embed_url = post_link
+    if '?' not in embed_url:
+        embed_url += "?embed=1"
+    else:
+        embed_url += "&embed=1"
+        
+    try:
+        r = safe_requests_get(embed_url, timeout=10)
+        if r.status_code == 200:
+            urls = re.findall(r"background-image:url\('([^']+)'\)", r.text)
+            clean_urls = []
+            for u in urls:
+                if '/emoji/' not in u:
+                    if u.startswith('//'):
+                        clean_urls.append('https:' + u)
+                    else:
+                        clean_urls.append(u)
+            return clean_urls
+    except Exception as e:
+        print(f"Failed to fetch embed page for post {post_link}: {e}")
+    return []
+
+def self_heal_missing_images(existing_posts):
+    print("Checking database for missing images (Self-healing)...")
+    healed_count = 0
+    for post in existing_posts:
+        post_id = post.get('id')
+        post_link = post.get('link')
+        images_list = post.get('images', [])
+        
+        if not images_list:
+            continue
+            
+        missing_indices = []
+        for idx, img_url in enumerate(images_list):
+            filename = img_url.split('/')[-1]
+            local_path = os.path.join(TARGET_IMG_DIR, filename)
+            if not os.path.exists(local_path):
+                missing_indices.append((idx, local_path))
+                
+        if missing_indices:
+            print(f"Post {post_id} is missing {len(missing_indices)} images locally. Fetching embed page...")
+            fresh_urls = extract_images_from_embed(post_link)
+            if not fresh_urls:
+                print(f"Could not retrieve fresh image URLs for post {post_id}")
+                continue
+                
+            for idx, local_path in missing_indices:
+                if idx < len(fresh_urls):
+                    fresh_url = fresh_urls[idx]
+                    print(f"Downloading missing image {local_path} from {fresh_url}...")
+                    if download_image(fresh_url, local_path):
+                        healed_count += 1
+                else:
+                    print(f"Index {idx} out of range for fresh URLs of post {post_id}")
+                    
+    if healed_count > 0:
+        print(f"Self-healing complete. Healed {healed_count} images.")
+    else:
+        print("Self-healing check complete. No missing images found.")
+    return healed_count
+
 def is_valid_post(clean_text, has_media=False):
     text_lower = clean_text.lower()
     
@@ -386,6 +449,9 @@ if __name__ == '__main__':
                 print(f"Loaded {len(existing_posts)} existing posts.")
         except Exception as e:
             print(f"Error loading existing JSON: {e}")
+
+    # Запускаем самолечение картинок перед парсингом новых постов
+    self_heal_missing_images(existing_posts)
 
     print(f"Fetching new posts from {channel_url}...")
     # Парсим новые посты (при регулярном запуске хватит и 100 страниц, так как мы останавливаемся при нахождении старого ID)
