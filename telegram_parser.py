@@ -192,6 +192,8 @@ def self_heal_missing_images(existing_posts):
         missing_indices = []
         for idx, img_url in enumerate(images_list):
             filename = img_url.split('/')[-1]
+            if filename.startswith('fallback_'):
+                continue
             local_path = os.path.join(TARGET_IMG_DIR, filename)
             if not os.path.exists(local_path):
                 missing_indices.append((idx, local_path))
@@ -405,6 +407,30 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
                         
             if not post_categories:
                 post_categories = ['Новости']
+
+            # Применяем тематические заглушки (fallbacks) для постов без изображений
+            if not images:
+                fallback_map = {
+                    'Спорт': 'fallback_sport.webp',
+                    'Общежитие': 'fallback_dormitory.webp',
+                    'БРСМ': 'fallback_brsm.webp',
+                    'Достижения': 'fallback_achievements.webp',
+                    'Профориентация': 'fallback_guidance.webp',
+                    'Профилактика': 'fallback_prevention.webp',
+                    'Официально': 'fallback_official.webp',
+                    'ВПВ': 'fallback_official.webp',
+                    'Год белорусской женщины': 'fallback_official.webp',
+                    'Жизнь колледжа': 'fallback_education.webp',
+                    'Новости': 'fallback_official.webp'
+                }
+                fallback_name = 'fallback_official.webp'
+                for cat in post_categories:
+                    if cat in fallback_map:
+                        fallback_name = fallback_map[cat]
+                        break
+                local_url = f"{URL_PREFIX}{fallback_name}"
+                images = [local_url]
+                image_url = local_url
 
             page_posts.append({
                 'id': post_id,
