@@ -407,8 +407,44 @@ if __name__ == '__main__':
     try:
         shutil.copy2(output_file, website_json)
         shutil.copy2(latest_file, website_latest)
-        print(f"Successfully copied to {website_json} and {website_latest}")
+        print(f"Successfully copied JSON to {website_json} and {website_latest}")
     except Exception as e:
         print(f"Failed to copy json to website directory: {e}")
+
+    # Также копируем картинки в папку сайта для надежности
+    website_img_dir = r"d:\Workspace\Web\PGATK Website\public\images\news"
+    if os.path.exists(website_img_dir):
+        try:
+            copied_count = 0
+            for filename in os.listdir(TARGET_IMG_DIR):
+                src_file = os.path.join(TARGET_IMG_DIR, filename)
+                dest_file = os.path.join(website_img_dir, filename)
+                if os.path.isfile(src_file) and not os.path.exists(dest_file):
+                    shutil.copy2(src_file, dest_file)
+                    copied_count += 1
+            if copied_count > 0:
+                print(f"Successfully copied {copied_count} new images to {website_img_dir}")
+        except Exception as e:
+            print(f"Failed to copy images to website directory: {e}")
         
     print(f"Successfully saved {len(final_posts)} total posts to {output_file} and top 15 to {latest_file}")
+
+    # Автоматический git commit и push для локального запуска
+    if not os.environ.get('GITHUB_ACTIONS'):
+        print("Running git commit and push locally...")
+        try:
+            import subprocess
+            # Проверяем, есть ли измененные или неотслеживаемые файлы
+            status = subprocess.run(["git", "status", "--porcelain"], capture_output=True, text=True, check=True)
+            if not status.stdout.strip():
+                print("No changes to commit.")
+            else:
+                # Добавляем файлы
+                subprocess.run(["git", "add", "telegram_news.json", "telegram_news_latest.json", "images/"], check=True)
+                # Делаем коммит
+                subprocess.run(["git", "commit", "-m", "Auto-update Telegram news (local execution)"], check=True)
+                # Делаем пуш
+                subprocess.run(["git", "push"], check=True)
+                print("Successfully committed and pushed changes to GitHub!")
+        except Exception as e:
+            print(f"Failed to commit and push changes: {e}")
