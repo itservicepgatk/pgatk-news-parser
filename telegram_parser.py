@@ -6,6 +6,23 @@ import re
 import shutil
 from datetime import datetime
 import pymorphy3
+import time
+
+def safe_requests_get(url, stream=False, max_retries=3, backoff_factor=2, timeout=10):
+    headers = {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
+    }
+    for attempt in range(max_retries):
+        try:
+            return requests.get(url, headers=headers, stream=stream, timeout=timeout)
+        except (requests.RequestException, Exception) as e:
+            if attempt == max_retries - 1:
+                print(f"Failed to fetch URL {url} after {max_retries} attempts. Error: {e}")
+                raise e
+            sleep_time = backoff_factor ** (attempt + 1)
+            print(f"Request failed ({e}). Retrying in {sleep_time}s (attempt {attempt + 1}/{max_retries})...")
+            time.sleep(sleep_time)
+
 
 morph = pymorphy3.MorphAnalyzer()
 
@@ -121,7 +138,7 @@ def download_image(url, target_webp_path):
     if not os.path.exists(target_webp_path):
         try:
             temp_jpg = target_webp_path.replace('.webp', '_temp.jpg')
-            r = requests.get(url, stream=True)
+            r = safe_requests_get(url, stream=True)
             if r.status_code == 200:
                 with open(temp_jpg, 'wb') as f:
                     for chunk in r.iter_content(1024):
@@ -160,7 +177,10 @@ def parse_telegram_channel(url, existing_ids, max_pages=100):
 
     for page_num in range(max_pages):
         print(f"Fetching page {page_num + 1}...")
-        response = requests.get(current_url)
+        try:
+            response = safe_requests_get(current_url, timeout=15)
+        except Exception:
+            break
         if response.status_code != 200:
             print(f"Failed to fetch {current_url}: Status {response.status_code}")
             break
@@ -441,10 +461,15 @@ if __name__ == '__main__':
             else:
                 # Добавляем файлы
                 subprocess.run(["git", "add", "telegram_news.json", "telegram_news_latest.json", "images/"], check=True)
-                # Делаем коммит
-                subprocess.run(["git", "commit", "-m", "Auto-update Telegram news (local execution)"], check=True)
-                # Делаем пуш
-                subprocess.run(["git", "push"], check=True)
-                print("Successfully committed and pushed changes to GitHub!")
+                # Проверяем, есть ли проиндексированные изменения для фиксации
+                staged = subprocess.run(["git", "diff", "--cached", "--quiet"])
+                if staged.returncode == 0:
+                    print("No news changes to commit (only unstaged script or config modifications).")
+                else:
+                    # Делаем коммит
+                    subprocess.run(["git", "commit", "-m", "Auto-update Telegram news (local execution)"], check=True)
+                    # Делаем пуш
+                    subprocess.run(["git", "push"], check=True)
+                    print("Successfully committed and pushed changes to GitHub!")
         except Exception as e:
             print(f"Failed to commit and push changes: {e}")
