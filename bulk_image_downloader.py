@@ -5,6 +5,7 @@ import re
 import cv2
 import concurrent.futures
 import time
+import shutil
 
 TARGET_IMG_DIR = "images/news"
 TEMP_IMG_DIR = "images/temp"
@@ -151,7 +152,19 @@ def process_image(temp_jpg_path):
         except: pass
         return True
         
-    success = smart_crop_16_9(temp_jpg_path, target_webp_path)
+    success = False
+    try:
+        success = smart_crop_16_9(temp_jpg_path, target_webp_path)
+    except Exception as e:
+        print(f"Error during smart crop for {temp_jpg_path}: {e}. Falling back to copy...")
+        
+    if not success:
+        try:
+            shutil.copy(temp_jpg_path, target_webp_path)
+            success = True
+        except Exception as copy_err:
+            print(f"Failed to copy raw image fallback: {copy_err}")
+            
     if success:
         try: os.remove(temp_jpg_path)
         except: pass

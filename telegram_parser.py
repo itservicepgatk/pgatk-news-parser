@@ -145,7 +145,18 @@ def download_image(url, target_webp_path):
                         f.write(chunk)
                 
                 # Apply smart crop and convert to webp
-                success = smart_crop_16_9(temp_jpg, target_webp_path)
+                success = False
+                try:
+                    success = smart_crop_16_9(temp_jpg, target_webp_path)
+                except Exception as e:
+                    print(f"Error during smart crop for {url}: {e}. Falling back to copy...")
+                
+                if not success:
+                    try:
+                        shutil.copy(temp_jpg, target_webp_path)
+                        success = True
+                    except Exception as copy_err:
+                        print(f"Failed to copy raw image fallback: {copy_err}")
                 
                 if os.path.exists(temp_jpg):
                     os.remove(temp_jpg)
