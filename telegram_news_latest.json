@@ -1,5 +1,29 @@
 [
   {
+    "id": "12284",
+    "title": "‼️БЕЗОПАСНОЕ ЛЕТО",
+    "summary": "Летний отдых у воды должен быть не только веселым, но и безопасным.\n\n🛟Простые правила помогают избежать беды.",
+    "content_html": "<tg-emoji emoji-id=\"5336810827389352598\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E280BC.png')\"><b>‼️</b></i></tg-emoji><b>БЕЗОПАСНОЕ ЛЕТО</b><br/><br/>Летний отдых у воды должен быть не только веселым, но и безопасным.<br/><br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9B9F.png')\"><b>🛟</b></i><i>Простые правила помогают избежать беды.</i>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_0.webp",
+    "date": "15.07.2026",
+    "category": [
+      "Профилактика"
+    ],
+    "link": "https://t.me/pgatkk/12284",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_3.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_4.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_5.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_6.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_7.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12284_8.webp"
+    ]
+  },
+  {
     "id": "12271",
     "title": "Учащиеся #ПГАТККЛЕЩЕВА привели в порядок памятный знак в честь мелиораторов Полесья",
     "summary": "14 июля учащиеся #ПГАТККЛЕЩЕВА проявили активную гражданскую позицию и заботу о сохранении исторической памяти региона. \nМолодые энтузиасты организовали уборку памятного знака, посвященного мелиораторам Полесья.\nНа месте памятного знака ребята убрали накопившуюся растительность, провели прополку и привели территорию в аккуратный и ухоженный вид. \n\nЭти действия – важный вклад в сохранение исторической памяти и культурного наследия региона.",
@@ -250,22 +274,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12230_0.webp"
-    ]
-  },
-  {
-    "id": "12226",
-    "title": "⚡️Суточные оперативные данные по регионам⚡️",
-    "summary": "(за прошедшие выходные)\n\nСпасенных: 13 человек \nУтонувших: 3 человека \n\n🔴Подписаться на канал ОСВОД Беларуси",
-    "content_html": "<tg-emoji emoji-id=\"5456140674028019486\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></tg-emoji>Суточные оперативные данные по регионам<tg-emoji emoji-id=\"5456140674028019486\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></tg-emoji><b><br/>(за прошедшие выходные)<br/><br/></b>Спасенных: 13 человек <br/>Утонувших: 3 человека <b><br/><br/></b><tg-emoji emoji-id=\"5411225014148014586\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji><a href=\"https://t.me/osvodrs\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b>Подписаться на канал ОСВОД Беларуси</b></a>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12226_0.webp",
-    "date": "06.07.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12226",
-    "hasVideo": true,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12226_0.webp"
     ]
   }
 ]
