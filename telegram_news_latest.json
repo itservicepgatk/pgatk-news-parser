@@ -1,5 +1,21 @@
 [
   {
+    "id": "12327",
+    "title": "1️⃣Следователи напоминают о неукоснительных правилах безопасности на воде:",
+    "summary": "🔵 Не отпускайте детей к водоемам без присмотра взрослых, даже если ребенок умеет плавать.\n🔵Запрещайте купание в незнакомых местах и в темное время суток.\n🔵Объясните подросткам: если друг тонет, нельзя тратить время на панику - нужно громко звать спасателей и звонить по номеру 112.\n🔵Контролируйте досуг детей. \n\n‼️Берегите себя и своих близких!",
+    "content_html": "<tg-emoji emoji-id=\"5436275264873051553\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/31E283A3.png')\"><b>1️⃣</b></i></tg-emoji><b>Следователи напоминают о неукоснительных правилах безопасности на воде:</b><br/><br/><tg-emoji emoji-id=\"5339513551524481000\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')\"><b>🔵</b></i></tg-emoji> Не отпускайте детей к водоемам без присмотра взрослых, даже если ребенок умеет плавать.<br/><tg-emoji emoji-id=\"5339513551524481000\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')\"><b>🔵</b></i></tg-emoji>Запрещайте купание в незнакомых местах и в темное время суток.<br/><tg-emoji emoji-id=\"5339513551524481000\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')\"><b>🔵</b></i></tg-emoji>Объясните подросткам: если друг тонет, нельзя тратить время на панику - нужно громко звать спасателей и звонить по номеру 112.<br/><tg-emoji emoji-id=\"5339513551524481000\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B5.png')\"><b>🔵</b></i></tg-emoji>Контролируйте досуг детей. <br/><br/><tg-emoji emoji-id=\"5336987509459005557\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E280BC.png')\"><b>‼️</b></i></tg-emoji>Берегите себя и своих близких!",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12327_0.webp",
+    "date": "06.08.2026",
+    "category": [
+      "Профилактика"
+    ],
+    "link": "https://t.me/pgatkk/12327",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12327_0.webp"
+    ]
+  },
+  {
     "id": "12326",
     "title": "Успейте подать документы!",
     "summary": "🤩Специальности\n🤩Проходные баллы \n🤩Перечень документов\n🤩Информация о ходе приема документов \n\nРежим работы  приёмной комиссии:\nпонедельник – суббота 09:00-18:00\n(без перерыва на обед)\nежедневно, кроме воскресенья (выходной)\n\nТелефон для справок: 8 (0165) 30 06 88\n\nУспей подать документы!",
@@ -233,22 +249,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12298_0.webp"
-    ]
-  },
-  {
-    "id": "12297",
-    "title": "🔺Подкаст, часть 4. Правильное поведение в экстремальных ситуациях",
-    "summary": "Таймкоды\n00:00 Начало\n00:03 Экстремальные ситуации\n00:51 Причины возникновения пожара\n02:00 Базовый элемент безопасности\n02:24 Гроза\n03:43 Безответственное отношение людей к животным\n\n#1регион\n\n🇧🇾 Больше новостей с @pervyiregion",
-    "content_html": "<tg-emoji emoji-id=\"5269213544003439460\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94BA.png')\"><b>🔺</b></i></tg-emoji><b>Подкаст, часть 4. Правильное поведение в экстремальных ситуациях</b><br/><br/><i>Таймкоды</i><br/>00:00 Начало<br/>00:03 Экстремальные ситуации<br/>00:51 Причины возникновения пожара<br/>02:00 Базовый элемент безопасности<br/>02:24 Гроза<br/>03:43 Безответственное отношение людей к животным<br/><br/><a href=\"https://t.me/pgatkk?q=%231%D1%80%D0%B5%D0%B3%D0%B8%D0%BE%D0%BD\">#1регион</a><br/><br/><tg-emoji emoji-id=\"5305691517292153347\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87A7F09F87BE.png')\"><b>🇧🇾</b></i></tg-emoji> Больше новостей с <a href=\"https://t.me/pervyiregion\" target=\"_blank\">@pervyiregion</a>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12297_0.webp",
-    "date": "16.07.2026",
-    "category": [
-      "Профилактика"
-    ],
-    "link": "https://t.me/pgatkk/12297",
-    "hasVideo": true,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12297_0.webp"
     ]
   }
 ]
