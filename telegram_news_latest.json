@@ -1,5 +1,25 @@
 [
   {
+    "id": "12335",
+    "title": "Друзья! В постах информация по заселению в общежитие, общему родительскому собранию и торжественной линейке!",
+    "summary": "Внимательно изучи, а если возникли вопросы задавай их в директ наших социальных сетей!",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\">Друзья! В постах информация по заселению в общежитие, общему родительскому собранию и торжественной линейке! <br/><blockquote>Внимательно изучи, а если возникли вопросы задавай их в директ наших социальных сетей!</blockquote></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_0.webp",
+    "date": "20.08.2026",
+    "category": [
+      "Общежитие",
+      "Официально"
+    ],
+    "link": "https://t.me/pgatkk/12335",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_3.webp"
+    ]
+  },
+  {
     "id": "12332",
     "title": "⚡В объективе студенческий производственный отряд «Колос» имени Надежды Викторовны Троян",
     "summary": "Студенческий отряд «Колос» имени Н.В.Троян трудится на Пинском хлебозаводе. В его составе учащиеся Пинского аграрно-технического колледжа им.А.Е.Клещева и Пинского строительного колледжа.\n\nЗа плечами - не только трудовой опыт и заработок, но и знакомство с технологией производства  от муки до свежей буханки🥖 Ребята показали, как устроена работа изнутри, и мы убедились: трудятся они с душой!\n💫Приятно видеть, как учащиеся колледжей берутся за работу и вливаются в коллектив.\n\n#Студотряд #БРСМ #МолодежьБеларуси #БСО",
@@ -235,22 +255,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12305_7.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12305_8.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12305_9.webp"
-    ]
-  },
-  {
-    "id": "12304",
-    "title": "🎉Торжественное открытие приемной комиссии -2026! Видеофакт!",
-    "summary": "Успей подать документы в #ПГАТККЛЕЩЕВА\n\n🤩Специальности\n🤩Проходные баллы \n🤩Перечень документов\n\nТелефон для справок: 8 (0165) 30 06 88",
-    "content_html": "<tg-emoji emoji-id=\"5208541126583136130\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')\"><b>🎉</b></i></tg-emoji><b>Торжественное открытие приемной комиссии -2026! Видеофакт! </b><br/><br/>Успей подать документы в <a href=\"https://t.me/pgatkk?q=%23%D0%9F%D0%93%D0%90%D0%A2%D0%9A%D0%9A%D0%9B%D0%95%D0%A9%D0%95%D0%92%D0%90\">#ПГАТККЛЕЩЕВА</a><br/><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/spetsialnosti-kvalifikatsii\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Специальности</a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/downloads/abiturient/prohodnie_balli.pdf\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Проходные баллы </a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/perechen-dokumentov\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Перечень документов</a><br/><br/><i>Телефон для справок: 8 (0165) 30 06 88</i>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12304_0.webp",
-    "date": "18.07.2026",
-    "category": [
-      "Профориентация"
-    ],
-    "link": "https://t.me/pgatkk/12304",
-    "hasVideo": true,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12304_0.webp"
     ]
   }
 ]
