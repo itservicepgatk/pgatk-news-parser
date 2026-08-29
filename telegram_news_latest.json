@@ -1,5 +1,29 @@
 [
   {
+    "id": "12349",
+    "title": "Списочный состав учебных групп нового набора.",
+    "summary": "В заголовке указаны номера учебных групп",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Списочный состав учебных групп нового набора</b>. <br/><br/><blockquote>В заголовке указаны номера учебных групп</blockquote></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_0.webp",
+    "date": "29.08.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12349",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_3.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_4.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_5.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_6.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_7.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12349_8.webp"
+    ]
+  },
+  {
     "id": "12346",
     "title": "«Пульс страны: факты, тренды, смыслы»",
     "summary": "27 августа коллектив #ПГАТККЛЕЩЕВА принял участие диалоговой площадке с участием депутата Палаты представителей Национального собрания Республики Беларусь, генеральным директором Национальной библиотеки Беларуси Вадимом Францевичем Гигиным, в рамках реализации республиканского информационно-просветительского проекта «Пульс страны: факты, тренды, смыслы».\n\nДанное мероприятие проходило в формате открытого диалога.",
@@ -235,22 +259,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12322_0.webp"
-    ]
-  },
-  {
-    "id": "12321",
-    "title": "🎉Ждем с нетерпением!!",
-    "summary": "🎓 Успейте подать документы! \n\n🤩Проходные баллы \n🤩Перечень документов\n🤩Информация о ходе приема документов \n\nТелефон для справок: 8 (0165) 30 06 88\n\nДействуйте прямо сейчас! 🔥",
-    "content_html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8E89.png')\"><b>🎉</b></i><b>Ждем с нетерпением!!</b><br/><br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8E93.png')\"><b>🎓</b></i> Успейте подать документы! <br/><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/downloads/abiturient/prohodnie_balli.pdf\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Проходные баллы </a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/perechen-dokumentov\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Перечень документов</a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/monitoring-priema\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Информация о ходе приема документов </a><br/><br/>Телефон для справок: 8 (0165) 30 06 88<br/><br/><b>Действуйте прямо сейчас! <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94A5.png')\"><b>🔥</b></i></b>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12321_0.webp",
-    "date": "29.07.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12321",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12321_0.webp"
     ]
   }
 ]
