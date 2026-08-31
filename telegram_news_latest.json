@@ -1,5 +1,29 @@
 [
   {
+    "id": "12359",
+    "title": "Списочный состав учебных групп нового набора.",
+    "summary": "В заголовке указаны номера учебных групп",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Списочный состав учебных групп нового набора</b>. <br/><br/><blockquote>В заголовке указаны номера учебных групп</blockquote></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_0.webp",
+    "date": "31.08.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12359",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_3.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_4.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_5.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_6.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_7.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12359_8.webp"
+    ]
+  },
+  {
     "id": "12358",
     "title": "1 сентября единый урок «Знания сегодня – сила и процветание Беларуси завтра!» 🇧🇾",
     "summary": "Главная цель – воспитание у подрастающего поколения чувства гордости и ответственности за свою страну, уважения к историческим и современным достижениям белорусского народа, а также осознание важности сохранения культурного и духовного наследия для будущих поколений.",
@@ -243,22 +267,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12325_0.webp"
-    ]
-  },
-  {
-    "id": "12323",
-    "title": "Труд-крут! Отряд «Партизаны» завершил смену на базе РУП ЖКХ",
-    "summary": "Друзья! Наш студенческий отряд «Партизаны» имени Героя Советского Союза Зои Анатольевны Космодемьянской успешно завершил смену на базе РУП «ЖУХ». Бойцы работали с 20 по 31 июля и показали высокий уровень организованности, ответственности и командной работы. Особую благодарность выражаем наставникам и руководству РУП «ЖКХ» за поддержку и профессионализм. \nСегодня, 1 августа, отмечается День Белорусских студенческих отрядов. Пусть история студотрядов вдохновляет новое поколение на яркие и достойные страницы. Вперёд к новым достижениям!",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Труд-крут! Отряд «Партизаны» завершил смену на базе РУП ЖКХ</b> <br/><br/>Друзья! Наш студенческий отряд «Партизаны» имени Героя Советского Союза Зои Анатольевны Космодемьянской успешно завершил смену на базе РУП «ЖУХ». <b>Бойцы работали с 20 по 31 июля и показали высокий уровень организованности, ответственности и командной работы. </b>Особую благодарность выражаем наставникам и руководству РУП «ЖКХ» за поддержку и профессионализм. <br/><blockquote>Сегодня, 1 августа, отмечается День Белорусских студенческих отрядов. Пусть история студотрядов вдохновляет новое поколение на яркие и достойные страницы. Вперёд к новым достижениям!</blockquote></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12323_0.webp",
-    "date": "01.08.2026",
-    "category": [
-      "Достижения"
-    ],
-    "link": "https://t.me/pgatkk/12323",
-    "hasVideo": true,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12323_0.webp"
     ]
   }
 ]
