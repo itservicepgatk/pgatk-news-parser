@@ -1,5 +1,24 @@
 [
   {
+    "id": "12396",
+    "title": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
+    "summary": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>ФОТОФАКТ!</b> <b>Единый урок «Знания сегодня — сила и процветание Беларуси завтра»</b></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12396_0.webp",
+    "date": "01.09.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12396",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12396_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12396_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12396_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12396_3.webp"
+    ]
+  },
+  {
     "id": "12388",
     "title": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
     "summary": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
@@ -270,24 +289,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_1.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_2.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_3.webp"
-    ]
-  },
-  {
-    "id": "12332",
-    "title": "⚡В объективе студенческий производственный отряд «Колос» имени Надежды Викторовны Троян",
-    "summary": "Студенческий отряд «Колос» имени Н.В.Троян трудится на Пинском хлебозаводе. В его составе учащиеся Пинского аграрно-технического колледжа им.А.Е.Клещева и Пинского строительного колледжа.\n\nЗа плечами - не только трудовой опыт и заработок, но и знакомство с технологией производства  от муки до свежей буханки🥖 Ребята показали, как устроена работа изнутри, и мы убедились: трудятся они с душой!\n💫Приятно видеть, как учащиеся колледжей берутся за работу и вливаются в коллектив.\n\n#Студотряд #БРСМ #МолодежьБеларуси #БСО",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡</b></i>В объективе студенческий производственный отряд «Колос» имени Надежды Викторовны Троян<br/><br/>Студенческий отряд «Колос» имени Н.В.Троян трудится на Пинском хлебозаводе. В его составе учащиеся Пинского аграрно-технического колледжа им.А.Е.Клещева и Пинского строительного колледжа.<br/><br/>За плечами - не только трудовой опыт и заработок, но и знакомство с технологией производства  от муки до свежей буханки<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA596.png')\"><b>🥖</b></i> Ребята показали, как устроена работа изнутри, и мы убедились: трудятся они с душой!<br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F92AB.png')\"><b>💫</b></i>Приятно видеть, как учащиеся колледжей берутся за работу и вливаются в коллектив.<br/><br/><a href=\"https://t.me/pgatkk?q=%23%D0%A1%D1%82%D1%83%D0%B4%D0%BE%D1%82%D1%80%D1%8F%D0%B4\">#Студотряд</a> <a href=\"https://t.me/pgatkk?q=%23%D0%91%D0%A0%D0%A1%D0%9C\">#БРСМ</a> <a href=\"https://t.me/pgatkk?q=%23%D0%9C%D0%BE%D0%BB%D0%BE%D0%B4%D0%B5%D0%B6%D1%8C%D0%91%D0%B5%D0%BB%D0%B0%D1%80%D1%83%D1%81%D0%B8\">#МолодежьБеларуси</a> <a href=\"https://t.me/pgatkk?q=%23%D0%91%D0%A1%D0%9E\">#БСО</a></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12332_0.webp",
-    "date": "19.08.2026",
-    "category": [
-      "Жизнь колледжа"
-    ],
-    "link": "https://t.me/pgatkk/12332",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12332_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12332_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12332_2.webp"
     ]
   }
 ]
