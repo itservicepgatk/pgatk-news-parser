@@ -1,5 +1,21 @@
 [
   {
+    "id": "12373",
+    "title": "🧠 Загрузка нового учебного года!",
+    "summary": "🟥 Первый курс только начинает этот марафон, выпускники - уже на финишной прямой, а все остальные — держат темп. Ни пуха сегодня и весь учебный год! \n\nС Днем знаний!",
+    "content_html": "<tg-emoji emoji-id=\"5895617412975299964\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA7A0.png')\"><b>🧠</b></i></tg-emoji> <b>Загрузка нового учебного года! </b><br/><br/><tg-emoji emoji-id=\"5852639281561996828\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')\"><b>🟥</b></i></tg-emoji> Первый курс только начинает этот марафон, выпускники - уже на финишной прямой, а все остальные — держат темп. <b>Ни пуха сегодня и весь учебный год!</b> <br/><br/>С Днем знаний!",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12373_0.webp",
+    "date": "01.09.2026",
+    "category": [
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12373",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12373_0.webp"
+    ]
+  },
+  {
     "id": "12370",
     "title": "Организационное собрание для родителей учащихся групп нового набора",
     "summary": "31 августа в учреждении образования состоялось организационное собрание для родителей учащихся групп нового набора по теме «Основные направления деятельности колледжа в 2026/2027 учебном году». \n\nС приветственным словом к законным представителям учащихся обратился директор колледжа - Колб Игорь Михайлович, который познакомил с традициями учреждения образования и правилами внутреннего распорядка колледжа, организацией образовательного  процесса.",
@@ -254,22 +270,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12327_0.webp"
-    ]
-  },
-  {
-    "id": "12326",
-    "title": "Успейте подать документы!",
-    "summary": "🤩Специальности\n🤩Проходные баллы \n🤩Перечень документов\n🤩Информация о ходе приема документов \n\nРежим работы  приёмной комиссии:\nпонедельник – суббота 09:00-18:00\n(без перерыва на обед)\nежедневно, кроме воскресенья (выходной)\n\nТелефон для справок: 8 (0165) 30 06 88\n\nУспей подать документы!",
-    "content_html": "<b>Успейте подать документы!</b><br/><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/spetsialnosti-kvalifikatsii\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Специальности</a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/downloads/abiturient/prohodnie_balli.pdf\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Проходные баллы </a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/perechen-dokumentov\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Перечень документов</a><br/><tg-emoji emoji-id=\"5884339335662147382\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA4A9.png')\"><b>🤩</b></i></tg-emoji><a href=\"https://pgatkk.by/abiturientam/monitoring-priema\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\">Информация о ходе приема документов </a><br/><br/><b>Режим работы  приёмной комиссии:</b><br/><b>понедельник – суббота 09:00-18:00</b><br/><b>(без перерыва на обед)</b><br/><b>ежедневно, кроме воскресенья (выходной)</b><br/><br/><i>Телефон для справок: 8 (0165) 30 06 88</i><br/><br/><b>Успей подать документы!</b>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12326_0.webp",
-    "date": "04.08.2026",
-    "category": [
-      "Профориентация"
-    ],
-    "link": "https://t.me/pgatkk/12326",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12326_0.webp"
     ]
   }
 ]
