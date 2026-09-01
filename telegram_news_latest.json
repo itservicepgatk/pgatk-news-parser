@@ -1,5 +1,24 @@
 [
   {
+    "id": "12407",
+    "title": "Ответственность и безопасность: ключевые аспекты жизни в общежитии",
+    "summary": "01 сентября прошла встреча учащихся нового набора проживающих в общежитии, с заместителем директора по воспитательной работе, воспитателями общежитий. В ходе встречи присутствующие были ознакомлены с правилами внутреннего распорядка, требованиями пропускного режима, основами безопасного поведения, ответственностью за совершение отдельных видов преступлений и правонарушений. \nВ открытом диалоге учащиеся задавали вопросы по волнующих их темам, на которые получили исчерпывающие ответы.",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Ответственность и безопасность: ключевые аспекты жизни в общежитии</b><br/><br/>01 сентября прошла <b>встреча учащихся нового набора проживающих в общежитии, с заместителем директора по воспитательной работе, воспитателями общежитий</b>. В ходе встречи присутствующие были ознакомлены с правилами внутреннего распорядка, требованиями пропускного режима, основами безопасного поведения, ответственностью за совершение отдельных видов преступлений и правонарушений. <br/><blockquote><b>В открытом диалоге учащиеся задавали вопросы по волнующих их темам, на которые получили исчерпывающие ответы.</b></blockquote></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12407_0.webp",
+    "date": "01.09.2026",
+    "category": [
+      "Профилактика",
+      "Общежитие"
+    ],
+    "link": "https://t.me/pgatkk/12407",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12407_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12407_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12407_2.webp"
+    ]
+  },
+  {
     "id": "12396",
     "title": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
     "summary": "ФОТОФАКТ! Единый урок «Знания сегодня — сила и процветание Беларуси завтра»",
@@ -269,26 +288,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12339_0.webp"
-    ]
-  },
-  {
-    "id": "12335",
-    "title": "Друзья! В постах информация по заселению в общежитие, общему родительскому собранию и торжественной линейке!",
-    "summary": "Внимательно изучи, а если возникли вопросы задавай их в директ наших социальных сетей!",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\">Друзья! В постах информация по заселению в общежитие, общему родительскому собранию и торжественной линейке! <br/><blockquote>Внимательно изучи, а если возникли вопросы задавай их в директ наших социальных сетей!</blockquote></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_0.webp",
-    "date": "20.08.2026",
-    "category": [
-      "Общежитие",
-      "Официально"
-    ],
-    "link": "https://t.me/pgatkk/12335",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12335_3.webp"
     ]
   }
 ]
