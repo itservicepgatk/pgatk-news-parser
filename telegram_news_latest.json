@@ -1,5 +1,22 @@
 [
   {
+    "id": "12441",
+    "title": "ВИДЕОФАКТ! Профилактическая акция «Автобус кибербезопасности» с бойцами МООП «Алмаз» #ПГАТККЛЕЩЕВА",
+    "summary": "ВИДЕОФАКТ! Профилактическая акция «Автобус кибербезопасности» с бойцами МООП «Алмаз» #ПГАТККЛЕЩЕВА",
+    "content_html": "<b>ВИДЕОФАКТ! </b>Профилактическая акция «Автобус кибербезопасности» с бойцами МООП «Алмаз» <a href=\"https://t.me/pgatkk?q=%23%D0%9F%D0%93%D0%90%D0%A2%D0%9A%D0%9A%D0%9B%D0%95%D0%A9%D0%95%D0%92%D0%90\">#ПГАТККЛЕЩЕВА</a>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12441_0.webp",
+    "date": "07.09.2026",
+    "category": [
+      "Профилактика",
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12441",
+    "hasVideo": true,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12441_0.webp"
+    ]
+  },
+  {
     "id": "12436",
     "title": "Профилактическая акция «Автобус кибербезопасности»",
     "summary": "07 сентября бойцы МООП «Алмаз» #ПГАТКККЛЕЩЕВА приняли участие в профилактической акции «Автобус кибербезопасности» совместно с правоохранителями Пинского ГОВД.  \n\nРебята информировали граждан о защите от цифровых угроз и мошенничества.\n\nЦель акции: повышение цифровой грамотности и предупреждение киберпреступлений (в частности, телефонного и интернет-мошенничества).",
@@ -262,22 +279,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12374_4.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12374_5.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12374_6.webp"
-    ]
-  },
-  {
-    "id": "12373",
-    "title": "🧠 Загрузка нового учебного года!",
-    "summary": "🟥 Первый курс только начинает этот марафон, выпускники - уже на финишной прямой, а все остальные — держат темп. Ни пуха сегодня и весь учебный год! \n\nС Днем знаний!",
-    "content_html": "<tg-emoji emoji-id=\"5895617412975299964\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FA7A0.png')\"><b>🧠</b></i></tg-emoji> <b>Загрузка нового учебного года! </b><br/><br/><tg-emoji emoji-id=\"5852639281561996828\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA5.png')\"><b>🟥</b></i></tg-emoji> Первый курс только начинает этот марафон, выпускники - уже на финишной прямой, а все остальные — держат темп. <b>Ни пуха сегодня и весь учебный год!</b> <br/><br/>С Днем знаний!",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12373_0.webp",
-    "date": "01.09.2026",
-    "category": [
-      "Жизнь колледжа"
-    ],
-    "link": "https://t.me/pgatkk/12373",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12373_0.webp"
     ]
   }
 ]
