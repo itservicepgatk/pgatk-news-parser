@@ -1,5 +1,26 @@
 [
   {
+    "id": "12436",
+    "title": "Профилактическая акция «Автобус кибербезопасности»",
+    "summary": "07 сентября бойцы МООП «Алмаз» #ПГАТКККЛЕЩЕВА приняли участие в профилактической акции «Автобус кибербезопасности» совместно с правоохранителями Пинского ГОВД.  \n\nРебята информировали граждан о защите от цифровых угроз и мошенничества.\n\nЦель акции: повышение цифровой грамотности и предупреждение киберпреступлений (в частности, телефонного и интернет-мошенничества).",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Профилактическая акция «Автобус кибербезопасности»</b> <br/><br/>07 сентября бойцы МООП «Алмаз» <a href=\"https://t.me/pgatkk?q=%23%D0%9F%D0%93%D0%90%D0%A2%D0%9A%D0%9A%D0%9A%D0%9B%D0%95%D0%A9%D0%95%D0%92%D0%90\">#ПГАТКККЛЕЩЕВА</a> приняли участие в профилактической акции «Автобус кибербезопасности» совместно с правоохранителями Пинского ГОВД.  <br/><br/><blockquote>Ребята информировали граждан о защите от цифровых угроз и мошенничества.</blockquote><br/><br/><i><b>Цель акции:</b> повышение цифровой грамотности и предупреждение киберпреступлений (в частности, телефонного и интернет-мошенничества).</i></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_0.webp",
+    "date": "07.09.2026",
+    "category": [
+      "Профилактика",
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12436",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_3.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_4.webp"
+    ]
+  },
+  {
     "id": "12435",
     "title": "Друзья, наш каравай под №3 нуждается в вашей поддержке!👆",
     "summary": "Спасибо!",
@@ -257,25 +278,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12373_0.webp"
-    ]
-  },
-  {
-    "id": "12370",
-    "title": "Организационное собрание для родителей учащихся групп нового набора",
-    "summary": "31 августа в учреждении образования состоялось организационное собрание для родителей учащихся групп нового набора по теме «Основные направления деятельности колледжа в 2026/2027 учебном году». \n\nС приветственным словом к законным представителям учащихся обратился директор колледжа - Колб Игорь Михайлович, который познакомил с традициями учреждения образования и правилами внутреннего распорядка колледжа, организацией образовательного  процесса.",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Организационное собрание для родителей учащихся групп нового набора</b><br/><br/>31 августа в учреждении образования состоялось организационное собрание для родителей учащихся групп нового набора по теме «Основные направления деятельности колледжа в 2026/2027 учебном году». <br/><br/><blockquote>С приветственным словом к законным представителям учащихся обратился директор колледжа - Колб Игорь Михайлович, который познакомил с традициями учреждения образования и правилами внутреннего распорядка колледжа, организацией образовательного  процесса.</blockquote></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12370_0.webp",
-    "date": "31.08.2026",
-    "category": [
-      "Жизнь колледжа",
-      "Официально"
-    ],
-    "link": "https://t.me/pgatkk/12370",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12370_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12370_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12370_2.webp"
     ]
   }
 ]
