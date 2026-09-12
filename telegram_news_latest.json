@@ -1,5 +1,21 @@
 [
   {
+    "id": "12487",
+    "title": "\"В школу с добрым сердцем\": благотворительная акция проходит в Пинске.",
+    "summary": "Солнце, музыка, игры и много детского смеха. Площадка социально-педагогического центра превратилась в место для большой встречи.\nВ центре внимания – воспитанники учреждения. Организаторы праздника – горком БРСМ и первокурсники аграрно-технического колледжа им. А.Е.Клещёва.",
+    "content_html": "<b>\"В школу с добрым сердцем\": благотворительная акция проходит в Пинске. </b><br/><blockquote>Солнце, музыка, игры и много детского смеха. Площадка социально-педагогического центра превратилась в место для большой встречи.</blockquote><br/><i>В центре внимания – воспитанники учреждения. Организаторы праздника – горком БРСМ и первокурсники аграрно-технического колледжа им. А.Е.Клещёва.</i>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12487_0.webp",
+    "date": "12.09.2026",
+    "category": [
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12487",
+    "hasVideo": true,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12487_0.webp"
+    ]
+  },
+  {
     "id": "12480",
     "title": "Урок памяти: Геноцид в годы Великой Отечественной войны",
     "summary": "10 сентября в  библиотеке прошел информационный час для группы 332С. Под руководством библиотекаря Кохнюк Н.В. и куратора Ткачик Е.С. учащиеся погрузились в тему \"Геноцид белорусского народа в годы Великой Отечественной войны\". \nВ рамках мероприятия был показан документальный фильм \"Лагеря смерти\", который помог ребятам лучше понять масштабы трагедии.",
@@ -258,22 +274,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_2.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_3.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12436_4.webp"
-    ]
-  },
-  {
-    "id": "12435",
-    "title": "Друзья, наш каравай под №3 нуждается в вашей поддержке!👆",
-    "summary": "Спасибо!",
-    "content_html": "Друзья, наш каравай под №3 нуждается в вашей поддержке!<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9186.png')\"><b>👆</b></i><br/><br/>Спасибо!",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/fallback_official.webp",
-    "date": "07.09.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12435",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/fallback_official.webp"
     ]
   }
 ]
