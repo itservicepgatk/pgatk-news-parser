@@ -1,5 +1,23 @@
 [
   {
+    "id": "12530",
+    "title": "Праздничное настроение — в самом разгаре!",
+    "summary": "✨ Делегация нашего колледжа прямо сейчас находится в Пинском городском доме культуры. \n\nВместе со всем городом отмечаем День народного единства на торжественном концерте. Гордимся быть частью такого важного события!",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Праздничное настроение — в самом разгаре! </b><br/><br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29CA8.png')\"><b>✨</b></i> Делегация нашего колледжа прямо сейчас находится в Пинском городском доме культуры. <br/><br/><i>Вместе со всем городом отмечаем День народного единства на торжественном концерте. Гордимся быть частью такого важного события!</i></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12530_0.webp",
+    "date": "17.09.2026",
+    "category": [
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12530",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12530_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12530_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12530_2.webp"
+    ]
+  },
+  {
     "id": "12529",
     "title": "День здоровья в рамках празднования Дня народного единства прошел в #ПГАТККЛЕЩЕВА 🇧🇾",
     "summary": "День здоровья в рамках празднования Дня народного единства прошел в #ПГАТККЛЕЩЕВА 🇧🇾",
@@ -258,29 +276,6 @@
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12478_0.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12478_1.webp"
-    ]
-  },
-  {
-    "id": "12468",
-    "title": "📸 Яркие кадры инициативы «В школу с Добрым сердцем!» 🔴",
-    "summary": "📸 Яркие кадры инициативы «В школу с Добрым сердцем!» 🔴",
-    "content_html": "<i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F93B8.png')\"><b>📸</b></i> <b>Яркие кадры инициативы «В школу с Добрым сердцем!» </b><b><tg-emoji emoji-id=\"5235763763176560724\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji></b>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_0.webp",
-    "date": "10.09.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12468",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_3.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_4.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_5.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_6.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12468_7.webp"
     ]
   }
 ]
