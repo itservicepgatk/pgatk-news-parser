@@ -1,5 +1,21 @@
 [
   {
+    "id": "12698",
+    "title": "Абитуриент 2027! Мы ждем тебя!",
+    "summary": "#пгаткклещева#кудапоступать#пинск#беларусь",
+    "content_html": "<b>Абитуриент 2027! Мы ждем тебя!</b><br/><br/>#пгаткклещева#кудапоступать#пинск#беларусь",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12698_0.webp",
+    "date": "02.10.2026",
+    "category": [
+      "Профориентация"
+    ],
+    "link": "https://t.me/pgatkk/12698",
+    "hasVideo": true,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12698_0.webp"
+    ]
+  },
+  {
     "id": "12697",
     "title": "«Яблоневый десант»: волонтёры БРСМ помогли пансионату «Пина» собрать урожай",
     "summary": "Волонтёры БРСМ из Пинского аграрно-технического колледжа имени А. Е. Клещёва помогли пансионату «Пина» собрать урожай яблок.\n\n➡️ https://pinskmedia.by/yablonevyy-desant-volontery-brsm-pomogli-pansionatu-pina-sobraty-urozhay/\n\n@pinsk_media",
@@ -272,26 +288,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12632_0.webp"
-    ]
-  },
-  {
-    "id": "12627",
-    "title": "Жизнь бесценна: разговор о психическом здоровье",
-    "summary": "24 сентября 2026 года в библиотеке учебного корпуса №3 библиотекарем Кохнюк Н.В. совместно с кураторами учебных групп Ткачик Е.С. и Михович О.Н. был проведён кураторский час на тему «Профилактика суицида». \nВ ходе мероприятия с ребятами состоялась беседа, направленная на повышение осведомлённости о важности сохранения психического здоровья и поддержке друг друга. Также участники просмотрели мини-документальный фильм «Письмо отца» и поучительный ролик «Профилактика суицида», которые помогли лучше понять проблему и способы её предотвращения.\nМероприятие прошло в тёплой и доверительной атмосфере, способствуя формированию у учащихся чувства ответственности за своё благополучие и благополучие окружающих.",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Жизнь бесценна: разговор о психическом здоровье</b><br/><br/>24 сентября 2026 года в библиотеке учебного корпуса №3 библиотекарем Кохнюк Н.В. совместно с кураторами учебных групп Ткачик Е.С. и Михович О.Н. был проведён <i>кураторский час на тему «Профилактика суицида»</i>. <br/><blockquote>В ходе мероприятия с ребятами состоялась беседа, направленная на повышение осведомлённости о важности сохранения психического здоровья и поддержке друг друга. Также участники просмотрели мини-документальный фильм «Письмо отца» и поучительный ролик «Профилактика суицида», которые помогли лучше понять проблему и способы её предотвращения.</blockquote><br/><b>Мероприятие прошло в тёплой и доверительной атмосфере, способствуя формированию у учащихся чувства ответственности за своё благополучие и благополучие окружающих.</b></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_0.webp",
-    "date": "24.09.2026",
-    "category": [
-      "Жизнь колледжа"
-    ],
-    "link": "https://t.me/pgatkk/12627",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_3.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12627_4.webp"
     ]
   }
 ]
