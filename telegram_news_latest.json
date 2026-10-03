@@ -1,5 +1,21 @@
 [
   {
+    "id": "12699",
+    "title": "🟩🟩🟩🟩🟩🟩🫡🔴🔴🔴",
+    "summary": "3 октября – День города \n\nМирного нам всем неба над головой, светлого блага, добра, взаимоуважения и чудесных возможностей роста и развития!",
+    "content_html": "<tg-emoji emoji-id=\"5370846080978136123\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5373225312471492383\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5370982437599850630\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5370930975301708606\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5370653494644583541\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5370824520242311477\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9FA9.png')\"><b>🟩</b></i></tg-emoji><tg-emoji emoji-id=\"5462962207375521646\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09FABA1.png')\"><b>🫡</b></i></tg-emoji><tg-emoji emoji-id=\"5370929420523547701\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji><tg-emoji emoji-id=\"5370713628481694726\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji><tg-emoji emoji-id=\"5370929420523547701\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F94B4.png')\"><b>🔴</b></i></tg-emoji><br/><br/><b>3 октября – День города </b><br/><br/><i>Мирного нам всем неба над головой, светлого блага, добра, взаимоуважения и чудесных возможностей роста и развития!</i>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12699_0.webp",
+    "date": "03.10.2026",
+    "category": [
+      "Новости"
+    ],
+    "link": "https://t.me/pgatkk/12699",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12699_0.webp"
+    ]
+  },
+  {
     "id": "12698",
     "title": "Абитуриент 2027! Мы ждем тебя!",
     "summary": "#пгаткклещева#кудапоступать#пинск#беларусь",
@@ -272,22 +288,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12633_0.webp"
-    ]
-  },
-  {
-    "id": "12632",
-    "title": "Делегация #ПГАТККЛЕЩЕВА на Международной выставке \"Наш дом\" в Минске 🏛🇧🇾",
-    "summary": "Делегация #ПГАТККЛЕЩЕВА на Международной выставке \"Наш дом\" в Минске 🏛🇧🇾",
-    "content_html": "<b>Делегация </b><a href=\"https://t.me/pgatkk?q=%23%D0%9F%D0%93%D0%90%D0%A2%D0%9A%D0%9A%D0%9B%D0%95%D0%A9%D0%95%D0%92%D0%90\"><b>#ПГАТККЛЕЩЕВА</b></a><b> на Международной выставке \"Наш дом\" в Минске <i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F8F9B.png')\"><b>🏛</b></i><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F87A7F09F87BE.png')\"><b>🇧🇾</b></i></b>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12632_0.webp",
-    "date": "25.09.2026",
-    "category": [
-      "Жизнь колледжа"
-    ],
-    "link": "https://t.me/pgatkk/12632",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12632_0.webp"
     ]
   }
 ]
