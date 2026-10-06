@@ -1,5 +1,28 @@
 [
   {
+    "id": "12750",
+    "title": "«Где учат Родину любить и защищать»: в Доме культуры прошла профориентационная встреча",
+    "summary": "Сегодня городской Дом культуры стал площадкой для важного диалога между представителями Военной академии Республики Беларусь и старшеклассниками региона.\n\nВ рамках мероприятия «Где учат Родину любить и защищать» начальник кафедры автомобильной техники академии Андрей Турчинович рассказал будущим выпускникам о перспективах военного образования. Ребята узнали об условиях поступления, особенностях обучения на различных факультетах и быте курсантов.\nПомимо теоретической части, школьников ждала практическая: они смогли ознакомиться с современными образцами вооружения, представленными на выставке. Такие встречи помогают ребятам не только определиться с будущей профессией, но и лучше понять, что значит быть защитником своей страны.",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>«Где учат Родину любить и защищать»: в Доме культуры прошла профориентационная встреча</b><br/><br/>Сегодня городской Дом культуры стал площадкой для важного диалога между представителями Военной академии Республики Беларусь и старшеклассниками региона.<br/><br/>В рамках мероприятия «Где учат Родину любить и защищать» начальник кафедры автомобильной техники академии Андрей Турчинович рассказал будущим выпускникам о перспективах военного образования. Ребята узнали об условиях поступления, особенностях обучения на различных факультетах и быте курсантов.<br/><blockquote>Помимо теоретической части, школьников ждала практическая: они смогли ознакомиться с современными образцами вооружения, представленными на выставке. Такие встречи помогают ребятам не только определиться с будущей профессией, но и лучше понять, что значит быть защитником своей страны.</blockquote></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_0.webp",
+    "date": "06.10.2026",
+    "category": [
+      "Жизнь колледжа",
+      "Профориентация"
+    ],
+    "link": "https://t.me/pgatkk/12750",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_2.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_3.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_4.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_5.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12750_6.webp"
+    ]
+  },
+  {
     "id": "12749",
     "title": "🍃С ДНЕМ УЧИТЕЛЯ !🍃",
     "summary": "🎓  Педагог — это не просто профессия. Это призвание, ответственность и ежедневный труд, который помогает молодому поколению получать знания, раскрывать таланты, формировать профессиональные и жизненные ориентиры.\n\n💫Ваш опыт, знания, мудрость и преданность делу — важная основа развития колледжа и залог успеха наших ребят. \n\n💞 Сердечно поздравляем всех с профессиональным праздником! Желаем вам крепкого здоровья, благополучия, профессиональных успехов, новых достижений и неиссякаемой энергии!",
@@ -255,28 +278,6 @@
     "hasVideo": false,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12696_0.webp"
-    ]
-  },
-  {
-    "id": "12689",
-    "title": "Спасибо за ваш благородный труд, мудрость, бесконечное терпение!",
-    "summary": "Спасибо за ваш благородный труд, мудрость, бесконечное терпение!",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b><i>Спасибо за ваш благородный труд, мудрость, бесконечное терпение</i></b>!</div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_0.webp",
-    "date": "01.10.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12689",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_3.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_4.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_5.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12689_6.webp"
     ]
   }
 ]
