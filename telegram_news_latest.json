@@ -1,5 +1,23 @@
 [
   {
+    "id": "12784",
+    "title": "Боевая ничья: 5:5 на стадионе «Волна»",
+    "summary": "06 октября на базе спортивного комплекса «Волна» состоялся захватывающий футбольный матч между командой нашего колледжа и командой Пинского района. Игра выдалась очень напряжённой и динамичной, обе команды показали высокий уровень мастерства и боевой дух. \nВ итоге встреча завершилась ничьей со счётом 5:5, что свидетельствует о равенстве сил и упорной борьбе на поле. \nБолельщики получили массу положительных эмоций и с нетерпением ждут следующих встреч.",
+    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>Боевая ничья: 5:5 на стадионе «Волна»</b><br/><br/>06 октября на базе спортивного комплекса «Волна» состоялся захватывающий футбольный матч между командой нашего колледжа и командой Пинского района. Игра выдалась очень напряжённой и динамичной, обе команды показали высокий уровень мастерства и боевой дух. <br/><blockquote>В итоге встреча завершилась ничьей со счётом 5:5, что свидетельствует о равенстве сил и упорной борьбе на поле. </blockquote><br/><i>Болельщики получили массу положительных эмоций и с нетерпением ждут следующих встреч.</i></div>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12784_0.webp",
+    "date": "07.10.2026",
+    "category": [
+      "Жизнь колледжа"
+    ],
+    "link": "https://t.me/pgatkk/12784",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12784_0.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12784_1.webp",
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12784_2.webp"
+    ]
+  },
+  {
     "id": "12778",
     "title": "Трудовой десант «За чистую территорию»",
     "summary": "6 октября 2026 года учащиеся групп 121Б и 141Б приняли участие в благоустройстве территории общежития №1. \nМероприятие прошло в рамках программы трудового воспитания и было направлено на развитие навыков коллективной работы.\nУчащиеся проявили себя как настоящая команда: работали старательно, слаженно и с полной отдачей. Благодаря общим усилиям прилегающая к общежитию территория стала чище и ухоженнее. Благодарим ребят за трудолюбие и ответственное отношение к делу!",
@@ -259,22 +277,6 @@
     "hasVideo": true,
     "images": [
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12736_0.webp"
-    ]
-  },
-  {
-    "id": "12734",
-    "title": "⚡️Проверка списка экстремистских материалов:",
-    "summary": "@stop_extremismBLR_bot\n\n❗️ Пересылка и иное системное распространение из источников в списке грозит административной ответственностью до 15 суток с конфискацией устройства!\n\nСписок экстремистских формирований:\n❗️ Любая отправка информации, интервью, финансирование или иное содействие повлечёт до 7 лет лишения свободы.",
-    "content_html": "<a href=\"https://t.me/guBAZAbot\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29AA1.png')\"><b>⚡️</b></i></b></a><b>Проверка списка экстремистских материалов:</b><br/><a href=\"https://t.me/stop_extremismBLR_bot\" target=\"_blank\"><b>@stop_extremismBLR_bot</b></a><br/><a href=\"https://telegra.ph/Napominaem-10-20-3\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><br/><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D97.png')\"><b>❗️</b></i></a> <u>Пересылка и иное системное распространение из источников в списке грозит административной ответственностью до 15 суток с конфискацией устройства!<br/><br/></u><b>Список</b><a href=\"https://t.me/extremistformbelarus\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b> экстремистских формирований</b></a><b>:</b><u><br/></u><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/E29D97.png')\"><b>❗️</b></i> <u>Любая отправка информации, интервью, финансирование или иное содействие повлечёт до 7 лет лишения свободы.</u>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12734_0.webp",
-    "date": "03.10.2026",
-    "category": [
-      "Новости"
-    ],
-    "link": "https://t.me/pgatkk/12734",
-    "hasVideo": true,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/12734_0.webp"
     ]
   }
 ]
