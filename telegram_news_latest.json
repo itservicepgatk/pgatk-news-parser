@@ -1,5 +1,21 @@
 [
   {
+    "id": "13379",
+    "title": "28.11.2026 в 11.00 часов состоится областное родительское собрание \"#РАГОВОР О ГЛАВНОМ. Простые правила счастливого детства\". Приглашаем родителей принять участие!",
+    "summary": "👉 Ссылка для подключения",
+    "content_html": "<b>28.11.2026 в 11.00 часов состоится областное родительское собрание \"</b><a href=\"https://www.instagram.com/explore/tags/%D1%80%D0%B0%D0%B3%D0%BE%D0%B2%D0%BE%D1%80/\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b>#РАГОВОР</b></a><b> О ГЛАВНОМ. Простые правила счастливого детства\". Приглашаем родителей принять участие!</b><br/><br/><tg-emoji emoji-id=\"5415758949129404605\"><i class=\"emoji\" style=\"background-image:url('//telegram.org/img/emoji/40/F09F9189.png')\"><b>👉</b></i></tg-emoji> <a href=\"https://youtube.com/live/qKooMZPjd4E?feature=share\" onclick=\"return confirm('Open this link?\\n\\n'+this.href);\" rel=\"noopener\" target=\"_blank\"><b>Ссылка для подключения</b></a>",
+    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13379_0.webp",
+    "date": "26.11.2026",
+    "category": [
+      "Официально"
+    ],
+    "link": "https://t.me/pgatkk/13379",
+    "hasVideo": false,
+    "images": [
+      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13379_0.webp"
+    ]
+  },
+  {
     "id": "13376",
     "title": "🎓 Связь поколений: встреча с выпускником колледжа",
     "summary": "26 октября 2026 года в рамках мероприятий, посвящённых 80-летию #ПГАТККЛЕЩЕВА, в актовом зале состоялась встреча учащихся отделения мелиорации земель с выпускником колледжа — Сергеем Леонидовичем Гацуковичем, прорабом государственного предприятия «Экспериментальная база „Майск“». С момента окончания им колледжа прошло 40 лет!\n🤝 Встреча прошла в формате открытого диалога. Сергей Леонидович поделился воспоминаниями о годах учёбы, рассказал о своём профессиональном пути. Вместе с учащимися обсудили, как менялась сфера мелиорации и какие качества важны молодому специалисту сегодня.\n💬 Ребята смогли задать вопросы и услышать советы человека, за плечами которого — многолетний опыт работы. Для будущих специалистов такая беседа — возможность лучше узнать профессию и задуматься о собственных планах.\n\nТакие встречи сохраняют связь поколений и напоминают: знания, полученные в колледже, становятся прочной основой для профессионального роста.\n\n👏 Благодарим Сергея Леонидовича за визит и тёплую беседу! Желаем крепкого здоровья, благополучия и успехов в работе!",
@@ -272,30 +288,6 @@
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13309_2.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13309_3.webp",
       "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13309_4.webp"
-    ]
-  },
-  {
-    "id": "13300",
-    "title": "ФОТОФАКТ! Подведение итогов конкурса талантов \"Дебют\"!",
-    "summary": "ФОТОФАКТ! Подведение итогов конкурса талантов \"Дебют\"!",
-    "content_html": "<div class=\"tgme_widget_message_text js-message_text\" dir=\"auto\"><b>ФОТОФАКТ! Подведение итогов конкурса талантов \"Дебют\"!</b></div>",
-    "imageUrl": "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_0.webp",
-    "date": "19.11.2026",
-    "category": [
-      "Достижения"
-    ],
-    "link": "https://t.me/pgatkk/13300",
-    "hasVideo": false,
-    "images": [
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_0.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_1.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_2.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_3.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_4.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_5.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_6.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_7.webp",
-      "https://raw.githubusercontent.com/itservicepgatk/pgatk-news-parser/main/images/news/13300_8.webp"
     ]
   }
 ]
